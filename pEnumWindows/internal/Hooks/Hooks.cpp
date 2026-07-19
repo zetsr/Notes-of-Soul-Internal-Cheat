@@ -102,7 +102,7 @@ namespace g_Hooks {
         EnumWindows(EnumWindowsProc, 0);
         if (g_hwnd) {
             oWndProc = (WNDPROC)SetWindowLongPtr(g_hwnd, GWLP_WNDPROC, (LONG_PTR)WndProcHook);
-            Shadow::SetAllowedKeys({ 'W', 'A', 'S', 'D', VK_SPACE }); // 放行常用移动按键
+            Shadow::SetAllowedKeys({ 'W', 'A', 'S', 'D', 'X', 'C', VK_SPACE, VK_CONTROL}); // 放行常用移动按键、复制、粘贴、剪切
         }
     }
 }
