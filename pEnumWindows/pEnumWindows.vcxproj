@@ -21,8 +21,11 @@
   <ItemGroup>
     <ClCompile Include="dllmain.cpp" />
     <ClCompile Include="external\CppSDK\SDK\Basic.cpp" />
+    <ClCompile Include="external\CppSDK\SDK\BP_PlayerGhost_functions.cpp" />
+    <ClCompile Include="external\CppSDK\SDK\BP_PlayerHuman_functions.cpp" />
     <ClCompile Include="external\CppSDK\SDK\CoreUObject_functions.cpp" />
     <ClCompile Include="external\CppSDK\SDK\Engine_functions.cpp" />
+    <ClCompile Include="external\CppSDK\SDK\KxFramework_functions.cpp" />
     <ClCompile Include="external\MinHook\src\buffer.c" />
     <ClCompile Include="external\MinHook\src\hde\hde32.c" />
     <ClCompile Include="external\MinHook\src\hde\hde64.c" />

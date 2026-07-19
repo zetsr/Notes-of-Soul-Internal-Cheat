@@ -1149,10 +1149,10 @@ namespace Shadow {
         if (!shouldDraw || clippedText.empty()) return;
 
         float finalScale = scaleVal * g_Ctx.Style.FontScaleDpi;
-        SDK::FVector2D scale{ static_cast<float>(finalScale), static_cast<float>(finalScale) };
+        SDK::FVector2D scale{ finalScale, finalScale };
 
         SDK::FLinearColor ueColor{ color.r, color.g, color.b, color.a };
-        SDK::FVector2D uePos{ static_cast<float>(clippedPos.x), static_cast<float>(clippedPos.y) };
+        SDK::FVector2D uePos{ clippedPos.x, clippedPos.y };
 
         Color sCol = g_Ctx.Style.Colors[GuiCol_TextShadow];
         Color oCol = g_Ctx.Style.Colors[GuiCol_TextOutline];
@@ -1163,7 +1163,7 @@ namespace Shadow {
         std::wstring wstr = ToWString(clippedText);
         g_Ctx.Canvas->K2_DrawText(font, SDK::FString(wstr.c_str()), uePos, scale, ueColor,
             0.0f, shadow, shadowOff,
-            false, false, false, outline);
+            false, false, true, outline);
     }
 
     // --- 剪贴板操作 ---

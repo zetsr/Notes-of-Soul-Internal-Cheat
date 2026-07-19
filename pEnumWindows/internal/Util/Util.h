@@ -7,6 +7,7 @@
 #include <algorithm>
 #include <string>
 #include <sstream>
+#include <chrono>
 
 namespace g_Util {
     inline SDK::APlayerController* GetLocalPC() {
@@ -77,4 +78,29 @@ namespace g_Util {
             bWasAnimating = false;
         }
 	}
+
+    inline void UpdateMenuAlpha() {
+        static auto lastTime = std::chrono::steady_clock::now();
+        std::chrono::steady_clock::time_point currentTime = std::chrono::steady_clock::now();
+        std::chrono::duration<float> deltaTime = currentTime - lastTime;
+        lastTime = currentTime;
+        float dt = deltaTime.count();
+
+        if (g_Config::bShowMenu) {
+            g_Hooks::currentAlpha += g_Hooks::fadeSpeed * dt;
+            if (g_Hooks::currentAlpha > 1.0f) g_Hooks::currentAlpha = 1.0f;
+        }
+        else {
+            g_Hooks::currentAlpha -= g_Hooks::fadeSpeed * dt;
+            if (g_Hooks::currentAlpha < 0.0f) g_Hooks::currentAlpha = 0.0f;
+        }
+    }
+
+    // 血量颜色渐变：满血绿 (0,1,0) -> 空血红 (1,0,0)
+    inline static SDK::FLinearColor GetHealthColor(float current, float max) {
+        if (max <= 0.0f) return { 0.0f, 1.0f, 0.0f, 1.0f };
+        float ratio = std::clamp(current / max, 0.0f, 1.0f);
+        return { 1.0f - ratio, ratio, 0.0f, 1.0f };
+    }
+
 }

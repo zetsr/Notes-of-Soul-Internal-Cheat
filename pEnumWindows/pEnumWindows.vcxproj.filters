@@ -108,6 +108,15 @@
     <ClCompile Include="external\CppSDK\SDK\Engine_functions.cpp">
       <Filter>src\external\CppSDK\SDK</Filter>
     </ClCompile>
+    <ClCompile Include="external\CppSDK\SDK\KxFramework_functions.cpp">
+      <Filter>src\external\CppSDK\SDK</Filter>
+    </ClCompile>
+    <ClCompile Include="external\CppSDK\SDK\BP_PlayerGhost_functions.cpp">
+      <Filter>src\external\CppSDK\SDK</Filter>
+    </ClCompile>
+    <ClCompile Include="external\CppSDK\SDK\BP_PlayerHuman_functions.cpp">
+      <Filter>src\external\CppSDK\SDK</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="external\AOBScan\AOBScan.hpp">

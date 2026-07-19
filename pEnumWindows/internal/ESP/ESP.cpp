@@ -26,12 +26,10 @@ namespace g_ESP {
         static SDK::UFont* MainFont = nullptr;
 
         if (!MainFont) {
-            SDK::UObject* _Font = SDK::UObject::FindObject("Font SIMHEI_Font.SIMHEI_Font");
-            if (_Font && _Font->IsA(SDK::UFont::StaticClass()))  MainFont = (SDK::UFont*)_Font;
+            MainFont = Shadow::DefaultFont;
         }
 
         if (!MainFont) return;
-        if (!Shadow::DefaultFont) Shadow::DefaultFont = MainFont;
 
         SDK::UFont* currentFont = MainFont;
 
