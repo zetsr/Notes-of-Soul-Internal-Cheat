@@ -10,6 +10,7 @@ namespace g_Config {
 	inline bool bEnableMagicAttack = true;
     inline int kMagicAttack = VK_XBUTTON2;
     inline Shadow::HotkeyMode eMagicAttackMode = Shadow::HotkeyMode::HoldOn;
+	inline float fMagicAttackRange = 5.0f; // 5m
 
     // 敌人
     inline bool bESP_Enemy = true;

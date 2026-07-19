@@ -62,6 +62,7 @@
     <ClInclude Include="internal\Menu\Menu.h" />
     <ClInclude Include="internal\UGameViewportClient\PostRender.h" />
     <ClInclude Include="internal\Util\Util.h" />
+    <ClInclude Include="XorStr.h" />
   </ItemGroup>
   <ItemGroup>
     <None Include="external\CppSDK\Assertions.inl" />

@@ -188,6 +188,9 @@
     <ClInclude Include="internal\Hooks\Hooks.h">
       <Filter>src\internal\Hooks</Filter>
     </ClInclude>
+    <ClInclude Include="XorStr.h">
+      <Filter>src</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <None Include="external\CppSDK\Assertions.inl">

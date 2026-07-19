@@ -3,6 +3,7 @@
 #include "ESP.h"
 #include "../Config/Configs.h"
 #include "../Util/Util.h"
+#include "../../XorStr.h"
 #include <string>
 #include <algorithm>
 #include <format>
@@ -35,14 +36,14 @@ namespace g_DrawESP {
                     &AllActors
                 );
 
-                float closestDistance = 1000.0f;
+                float closestDistance = g_Config::fMagicAttackRange * 100;
                 SDK::AActor* closestHuman = nullptr;
 
                 for (size_t j = 0; j < AllActors.Num(); j++) {
                     SDK::AActor* HumanActor = AllActors[j];
                     if (HumanActor && !HumanActor->bHidden) {
                         float distance = LocalPawn->GetDistanceTo(HumanActor);
-                        if (distance <= 1000.0f && distance < closestDistance) {
+                        if (distance <= g_Config::fMagicAttackRange * 100 && distance < closestDistance) {
                             closestDistance = distance;
                             closestHuman = HumanActor;
                         }
@@ -117,17 +118,24 @@ namespace g_DrawESP {
                     g_ESP::FlagPos::Right, 1.0f);
             }
 
-            // 2. 距离 (白色)
-            std::string distanceText = std::format("{:.1f}m", distance);
+            // 2. 距离 (白色) - 使用 std::vformat 允许运行时动态格式化模板字符串
+            std::string distanceText = std::vformat(
+                _XOR_("{:.1f}m").str(),
+                std::make_format_args(distance)
+            );
             flagMgr.AddFlag(Canvas, rect, distanceText,
                 SDK::FLinearColor{ 1.0f, 1.0f, 1.0f, 1.0f },
                 g_ESP::FlagPos::Right, 1.0f);
 
-            // 3. 血量 (使用 g_Util::GetHealthColor)
+            // 3. 血量 (使用 g_Util::GetHealthColor) - 使用 std::vformat 允许运行时动态格式化模板字符串
             if (bShowHealth) {
                 SDK::FLinearColor healthColor = g_Util::GetHealthColor(health, maxHealth);
                 int percent = maxHealth > 0 ? static_cast<int>((health / maxHealth) * 100.0f) : 0;
-                std::string healthText = std::format("{:.0f}/{:.0f} ({}%)", health, maxHealth, percent);
+
+                std::string healthText = std::vformat(
+                    _XOR_("{:.0f}/{:.0f} ({}%)").str(),
+                    std::make_format_args(health, maxHealth, percent)
+                );
                 flagMgr.AddFlag(Canvas, rect, healthText,
                     healthColor, g_ESP::FlagPos::Right, 1.0f);
             }
@@ -140,33 +148,33 @@ namespace g_DrawESP {
             if (Human) {
                 // 1. 特殊状态
                 if (Human->IsHealthLocked) {
-                    flagMgr.AddFlag(Canvas, rect, "无敌",
+                    flagMgr.AddFlag(Canvas, rect, _XOR_("无敌").str(),
                         SDK::FLinearColor{ 1.0f, 1.0f, 0.0f, 1.0f }, // 黄色
                         g_ESP::FlagPos::Right, 1.0f);
                 }
 
                 if (Human->IsProtectingSoul) {
-                    flagMgr.AddFlag(Canvas, rect, "护魄",
+                    flagMgr.AddFlag(Canvas, rect, _XOR_("护魄").str(),
                         SDK::FLinearColor{ 1.0f, 0.5f, 0.0f, 1.0f }, // 橙色
                         g_ESP::FlagPos::Right, 1.0f);
                 }
 
                 if (Human->IsPlayDead) {
-                    flagMgr.AddFlag(Canvas, rect, "装死",
+                    flagMgr.AddFlag(Canvas, rect, _XOR_("装死").str(),
                         SDK::FLinearColor{ 0.5f, 0.5f, 0.5f, 1.0f }, // 灰色
                         g_ESP::FlagPos::Right, 1.0f);
                 }
 
                 // 2. 被控制状态
                 if (Human->IsCatchByZhiRen || Human->IsTrapRopedByXiaoBai) {
-                    flagMgr.AddFlag(Canvas, rect, "被控",
+                    flagMgr.AddFlag(Canvas, rect, _XOR_("被控").str(),
                         SDK::FLinearColor{ 1.0f, 0.0f, 0.0f, 1.0f }, // 红色
                         g_ESP::FlagPos::Right, 1.0f);
                 }
 
                 // 3. 物品显示
                 if (Human->IsHoldingItem) {
-                    flagMgr.AddFlag(Canvas, rect, "持物",
+                    flagMgr.AddFlag(Canvas, rect, _XOR_("持物").str(),
                         SDK::FLinearColor{ 0.0f, 1.0f, 1.0f, 1.0f }, // 青色
                         g_ESP::FlagPos::Right, 1.0f);
                 }
