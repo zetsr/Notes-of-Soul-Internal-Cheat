@@ -13,7 +13,8 @@ void MainThread(LPVOID lpParam) {
     if (mhStatus != MH_OK && mhStatus != MH_ERROR_ALREADY_INITIALIZED) {
         return;
     }
-    Shadow::SetAllowedKeys({ 'W', 'A', 'S', 'D', VK_SPACE }); // 放行常用移动按键
+
+	g_Hooks::FindWndProc();
     g_Hooks::FindPostRender();
 }
 
