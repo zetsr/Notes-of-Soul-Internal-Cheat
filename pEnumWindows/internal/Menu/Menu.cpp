@@ -33,7 +33,7 @@ namespace g_Menu {
 
                 // 功能
                 if (Shadow::BeginTabItem(U8("功能##tab1"))) {
-                    Shadow::HotKey(U8("魔法攻击##magic_attack__key"), &g_Config::kMagicAttack);
+                    Shadow::HotKey(U8("魔法攻击##magic_attack__key"), &g_Config::kMagicAttack, &g_Config::bEnableMagicAttack, &g_Config::eMagicAttackMode);
                 }
                 Shadow::EndTabItem();
 

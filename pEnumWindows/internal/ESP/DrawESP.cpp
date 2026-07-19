@@ -22,8 +22,8 @@ namespace g_DrawESP {
 
         SDK::AKxPlayerState* LocalKxPS = static_cast<SDK::AKxPlayerState*>(LocalPS);
 
-        // 魔法攻击：鬼传送所有人类到身边
-        if (g_Config::kMagicAttack) {
+        // 魔法攻击：鬼传送最近的一个人类到身边（距离不超过10m）
+        if (g_Config::bEnableMagicAttack) {
             SDK::APawn* LocalPawn = LocalPC->K2_GetPawn();
             if (LocalPawn && LocalPawn->IsA(SDK::ABP_PlayerGhost_C::StaticClass())) {
                 SDK::FVector localLocation = LocalPawn->K2_GetActorLocation();
@@ -35,11 +35,22 @@ namespace g_DrawESP {
                     &AllActors
                 );
 
+                float closestDistance = 1000.0f;
+                SDK::AActor* closestHuman = nullptr;
+
                 for (size_t j = 0; j < AllActors.Num(); j++) {
                     SDK::AActor* HumanActor = AllActors[j];
                     if (HumanActor && !HumanActor->bHidden) {
-                        HumanActor->K2_SetActorLocation(localLocation, false, nullptr, false);
+                        float distance = LocalPawn->GetDistanceTo(HumanActor);
+                        if (distance <= 1000.0f && distance < closestDistance) {
+                            closestDistance = distance;
+                            closestHuman = HumanActor;
+                        }
                     }
+                }
+
+                if (closestHuman) {
+                    closestHuman->K2_SetActorLocation(localLocation, false, nullptr, false);
                 }
             }
         }
@@ -91,6 +102,9 @@ namespace g_DrawESP {
             float maxHealth = Player->MaxHealthValue;
             float armor = Player->ArmorValue;
 
+            // 计算距离
+            float distance = (LocalPC && LocalPC->Pawn && Actor) ? (LocalPC->Pawn->GetDistanceTo(Actor) / 100.0f) : 0.0f;
+
             g_ESP::FlagManager flagMgr;
 
             bool bShowName = isEnemy ? g_Config::bESP_Enemy_Name : g_Config::bESP_Teammate_Name;
@@ -103,7 +117,13 @@ namespace g_DrawESP {
                     g_ESP::FlagPos::Right, 1.0f);
             }
 
-            // 2. 血量 (使用 g_Util::GetHealthColor)
+            // 2. 距离 (白色)
+            std::string distanceText = std::format("{:.1f}m", distance);
+            flagMgr.AddFlag(Canvas, rect, distanceText,
+                SDK::FLinearColor{ 1.0f, 1.0f, 1.0f, 1.0f },
+                g_ESP::FlagPos::Right, 1.0f);
+
+            // 3. 血量 (使用 g_Util::GetHealthColor)
             if (bShowHealth) {
                 SDK::FLinearColor healthColor = g_Util::GetHealthColor(health, maxHealth);
                 int percent = maxHealth > 0 ? static_cast<int>((health / maxHealth) * 100.0f) : 0;

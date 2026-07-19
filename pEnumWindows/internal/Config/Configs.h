@@ -1,11 +1,15 @@
 #pragma once
 #include <windows.h>
 #include "../../external/CppSDK/SDK.hpp"
+#include "../../external/Shadow-Gui/include/Shadow.h"
 
 namespace g_Config {
     inline bool bShowMenu = false;
     inline int kMenu = VK_F1;
+
+	inline bool bEnableMagicAttack = true;
     inline int kMagicAttack = VK_XBUTTON2;
+    inline Shadow::HotkeyMode eMagicAttackMode = Shadow::HotkeyMode::HoldOn;
 
     // 敌人
     inline bool bESP_Enemy = true;
