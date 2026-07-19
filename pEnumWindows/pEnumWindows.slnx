@@ -1,0 +1,7 @@
+<Solution>
+  <Configurations>
+    <Platform Name="x64" />
+    <Platform Name="x86" />
+  </Configurations>
+  <Project Path="pEnumWindows.vcxproj" Id="8f34ede7-fe3c-44e2-bf79-a6eb0fec8505" />
+</Solution>
