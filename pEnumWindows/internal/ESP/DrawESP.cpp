@@ -22,7 +22,7 @@ namespace g_DrawESP {
     SDK::AActor* FindBestTarget(SDK::UWorld* World, SDK::APlayerController* LocalPC, int nMode, float fRange, float fFov) {
         if (!World || !LocalPC) return nullptr;
 
-        SDK::APawn* LocalPawn = LocalPC->K2_GetPawn();
+        SDK::APawn* LocalPawn = LocalPC->Pawn;
         if (!LocalPawn) return nullptr;
 
         SDK::FVector localLocation = LocalPawn->K2_GetActorLocation();
