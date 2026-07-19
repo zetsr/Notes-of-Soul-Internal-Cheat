@@ -10,7 +10,16 @@ namespace g_Config {
     inline bool bEnableMagicAttack = true;
     inline int kMagicAttack = VK_XBUTTON2;
     inline Shadow::HotkeyMode eMagicAttackMode = Shadow::HotkeyMode::HoldOn;
+    inline int nMagicAttackMode = 0;
     inline float fMagicAttackRange = 5.0f;
+    inline float fMagicAttackFov = 30.0f;
+
+    inline bool bEnableTeleport = false;
+    inline int kTeleport = VK_XBUTTON1;
+    inline Shadow::HotkeyMode eTeleportMode = Shadow::HotkeyMode::HoldOn;
+    inline int nTeleportTargetMode = 0;
+    inline float fTeleportRange = 5.0f;
+    inline float fTeleportFov = 30.0f;
 
     inline bool bESP_Enemy = true;
     inline bool bESP_Enemy_Name = true;

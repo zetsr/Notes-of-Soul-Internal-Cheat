@@ -9,6 +9,59 @@
 #include <format>
 
 namespace g_DrawESP {
+
+    float GetAngleDistance(SDK::FVector CamLoc, SDK::FVector TargetLoc, SDK::FRotator CamRot) {
+        SDK::FVector Diff = { TargetLoc.X - CamLoc.X, TargetLoc.Y - CamLoc.Y, TargetLoc.Z - CamLoc.Z };
+        SDK::FVector DirToTarget = SDK::UKismetMathLibrary::Normal(Diff, 0.0001f);
+        SDK::FVector CamForward = SDK::UKismetMathLibrary::GetForwardVector(CamRot);
+        double Dot = SDK::UKismetMathLibrary::Dot_VectorVector(DirToTarget, CamForward);
+        Dot = SDK::UKismetMathLibrary::FClamp(Dot, -1.0f, 1.0f);
+        return (float)SDK::UKismetMathLibrary::DegAcos(Dot);
+    }
+
+    SDK::AActor* FindBestTarget(SDK::UWorld* World, SDK::APlayerController* LocalPC, int nMode, float fRange, float fFov) {
+        if (!World || !LocalPC) return nullptr;
+
+        SDK::APawn* LocalPawn = LocalPC->K2_GetPawn();
+        if (!LocalPawn) return nullptr;
+
+        SDK::FVector localLocation = LocalPawn->K2_GetActorLocation();
+        SDK::FRotator localRotation = LocalPC->GetControlRotation();
+
+        SDK::TArray<SDK::AActor*> AllActors;
+        SDK::UGameplayStatics::GetAllActorsOfClass(
+            World,
+            SDK::ABP_PlayerHuman_C::StaticClass(),
+            &AllActors
+        );
+
+        float bestValue = FLT_MAX;
+        SDK::AActor* bestTarget = nullptr;
+
+        for (size_t j = 0; j < AllActors.Num(); j++) {
+            SDK::AActor* Target = AllActors[j];
+            if (!Target || Target->bHidden) continue;
+
+            if (nMode == 0) {
+                float distance = LocalPawn->GetDistanceTo(Target);
+                if (distance <= fRange * 100.0f && distance < bestValue) {
+                    bestValue = distance;
+                    bestTarget = Target;
+                }
+            }
+            else if (nMode == 1) {
+                SDK::FVector targetLocation = Target->K2_GetActorLocation();
+                float angleDistance = GetAngleDistance(localLocation, targetLocation, localRotation);
+                if (angleDistance <= fFov && angleDistance < bestValue) {
+                    bestValue = angleDistance;
+                    bestTarget = Target;
+                }
+            }
+        }
+
+        return bestTarget;
+    }
+
     void DrawESP(SDK::UCanvas* Canvas) {
         if (!Canvas) return;
 
@@ -28,29 +81,22 @@ namespace g_DrawESP {
             if (LocalPawn && LocalPawn->IsA(SDK::ABP_PlayerGhost_C::StaticClass())) {
                 SDK::FVector localLocation = LocalPawn->K2_GetActorLocation();
 
-                SDK::TArray<SDK::AActor*> AllActors;
-                SDK::UGameplayStatics::GetAllActorsOfClass(
-                    World,
-                    SDK::ABP_PlayerHuman_C::StaticClass(),
-                    &AllActors
-                );
+                SDK::AActor* Target = FindBestTarget(World, LocalPC, g_Config::nMagicAttackMode, g_Config::fMagicAttackRange, g_Config::fMagicAttackFov);
 
-                float closestDistance = g_Config::fMagicAttackRange * 100;
-                SDK::AActor* closestHuman = nullptr;
-
-                for (size_t j = 0; j < AllActors.Num(); j++) {
-                    SDK::AActor* HumanActor = AllActors[j];
-                    if (HumanActor && !HumanActor->bHidden) {
-                        float distance = LocalPawn->GetDistanceTo(HumanActor);
-                        if (distance <= g_Config::fMagicAttackRange * 100 && distance < closestDistance) {
-                            closestDistance = distance;
-                            closestHuman = HumanActor;
-                        }
-                    }
+                if (Target) {
+                    Target->K2_SetActorLocation(localLocation, false, nullptr, false);
                 }
+            }
+        }
 
-                if (closestHuman) {
-                    closestHuman->K2_SetActorLocation(localLocation, false, nullptr, false);
+        if (g_Config::bEnableTeleport) {
+            SDK::APawn* LocalPawn = LocalPC->K2_GetPawn();
+            if (LocalPawn) {
+                SDK::AActor* Target = FindBestTarget(World, LocalPC, g_Config::nTeleportTargetMode, g_Config::fTeleportRange, g_Config::fTeleportFov);
+
+                if (Target) {
+                    SDK::FVector targetLocation = Target->K2_GetActorLocation();
+                    LocalPawn->K2_SetActorLocation(targetLocation, false, nullptr, false);
                 }
             }
         }
