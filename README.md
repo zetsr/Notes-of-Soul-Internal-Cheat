@@ -1,3 +1,3 @@
 # Notes-of-Soul-Internal-Cheat
-<img width="435" height="615" alt="QQ20260720-012656" src="https://github.com/user-attachments/assets/d440df90-78cd-4af6-b45d-d319a9278aee" />
-<img width="436" height="614" alt="QQ20260720-012707" src="https://github.com/user-attachments/assets/be3dbff2-6bb1-4849-a7e2-58c38566cade" />
+<img width="504" height="399" alt="QQ20260720-171021" src="https://github.com/user-attachments/assets/46165d8b-97f5-40f8-819f-2f80275e1b45" />
+<img width="1919" height="1079" alt="image" src="https://github.com/user-attachments/assets/fd2769ba-e82f-4678-a480-98fd98808b47" />
