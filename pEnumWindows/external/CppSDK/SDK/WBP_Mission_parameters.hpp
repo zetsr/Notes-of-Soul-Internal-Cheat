@@ -10,16 +10,16 @@
 
 #include "Basic.hpp"
 
-#include "S_ItemInfo_structs.hpp"
 #include "S_MissionData_structs.hpp"
-#include "S_HumanSkinsInfo_structs.hpp"
 #include "S_PetInfo_structs.hpp"
-#include "S_HumanSwordInfo_structs.hpp"
-#include "S_ItemDBInfo_structs.hpp"
-#include "S_MissionReward_structs.hpp"
-#include "S_TitleData_structs.hpp"
-#include "E_CharacterType_structs.hpp"
+#include "S_HumanSkinsInfo_structs.hpp"
 #include "S_HumenActions_structs.hpp"
+#include "S_TitleData_structs.hpp"
+#include "S_MissionReward_structs.hpp"
+#include "S_HumanSwordInfo_structs.hpp"
+#include "E_CharacterType_structs.hpp"
+#include "S_ItemDBInfo_structs.hpp"
+#include "S_ItemInfo_structs.hpp"
 #include "S_AccessoriesInfo_structs.hpp"
 #include "S_CharacterAnimationInfo_structs.hpp"
 

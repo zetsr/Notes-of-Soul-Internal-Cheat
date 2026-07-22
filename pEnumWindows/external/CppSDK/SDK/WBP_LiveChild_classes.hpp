@@ -10,10 +10,10 @@
 
 #include "Basic.hpp"
 
+#include "S_LiveURL_structs.hpp"
 #include "CoreUObject_structs.hpp"
 #include "UMG_classes.hpp"
 #include "Engine_structs.hpp"
-#include "S_LiveURL_structs.hpp"
 
 
 SDK_NAMESPACE_START

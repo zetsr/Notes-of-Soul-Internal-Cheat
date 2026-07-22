@@ -68,15 +68,6 @@ public:
 };
 DUMPER7_ASSERTS_BP_StoneDoor1_C_ExecuteUbergraph_BP_StoneDoor1;
 
-// Function BP_StoneDoor1.BP_StoneDoor1_C.UserConstructionScript
-// 0x0004 (0x0004 - 0x0000)
-struct BP_StoneDoor1_C_UserConstructionScript final
-{
-public:
-	int32                                         CallFunc_Array_AddUnique_ReturnValue;              // 0x0000(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_StoneDoor1_C_UserConstructionScript;
-
 // Function BP_StoneDoor1.BP_StoneDoor1_C.DominateThisDoor
 // 0x0008 (0x0008 - 0x0000)
 struct BP_StoneDoor1_C_DominateThisDoor final
@@ -86,6 +77,15 @@ public:
 	bool                                          IsPositive;                                        // 0x0004(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
 DUMPER7_ASSERTS_BP_StoneDoor1_C_DominateThisDoor;
+
+// Function BP_StoneDoor1.BP_StoneDoor1_C.UserConstructionScript
+// 0x0004 (0x0004 - 0x0000)
+struct BP_StoneDoor1_C_UserConstructionScript final
+{
+public:
+	int32                                         CallFunc_Array_AddUnique_ReturnValue;              // 0x0000(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_StoneDoor1_C_UserConstructionScript;
 
 // Function BP_StoneDoor1.BP_StoneDoor1_C.OpenCloseDoor
 // 0x0001 (0x0001 - 0x0000)

@@ -10,9 +10,9 @@
 
 #include "Basic.hpp"
 
+#include "E_MoneyType_structs.hpp"
 #include "E_CommodityType_structs.hpp"
 #include "S_SaleData_structs.hpp"
-#include "E_MoneyType_structs.hpp"
 
 
 SDK_NAMESPACE_START

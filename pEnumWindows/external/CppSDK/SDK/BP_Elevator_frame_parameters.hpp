@@ -110,6 +110,15 @@ public:
 };
 DUMPER7_ASSERTS_BP_Elevator_frame_C_ChangeCurrentFloor;
 
+// Function BP_Elevator_frame.BP_Elevator_frame_C.OpenCloseDoor
+// 0x0001 (0x0001 - 0x0000)
+struct BP_Elevator_frame_C_OpenCloseDoor final
+{
+public:
+	bool                                          IsPositive;                                        // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+};
+DUMPER7_ASSERTS_BP_Elevator_frame_C_OpenCloseDoor;
+
 // Function BP_Elevator_frame.BP_Elevator_frame_C.UserConstructionScript
 // 0x0010 (0x0010 - 0x0000)
 struct BP_Elevator_frame_C_UserConstructionScript final
@@ -119,15 +128,6 @@ public:
 	int32                                         CallFunc_Array_AddUnique_ReturnValue;              // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_BP_Elevator_frame_C_UserConstructionScript;
-
-// Function BP_Elevator_frame.BP_Elevator_frame_C.OpenCloseDoor
-// 0x0001 (0x0001 - 0x0000)
-struct BP_Elevator_frame_C_OpenCloseDoor final
-{
-public:
-	bool                                          IsPositive;                                        // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-};
-DUMPER7_ASSERTS_BP_Elevator_frame_C_OpenCloseDoor;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

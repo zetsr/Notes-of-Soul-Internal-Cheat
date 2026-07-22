@@ -10,9 +10,9 @@
 
 #include "Basic.hpp"
 
-#include "S_GhostData_structs.hpp"
 #include "Engine_structs.hpp"
 #include "CoreUObject_structs.hpp"
+#include "S_GhostData_structs.hpp"
 
 
 SDK_NAMESPACE_START

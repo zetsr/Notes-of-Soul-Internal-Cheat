@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "S_ExchangeStructure_structs.hpp"
 #include "SlateCore_structs.hpp"
+#include "S_ExchangeStructure_structs.hpp"
 #include "S_AccessoriesInfo_structs.hpp"
 #include "S_TitleData_structs.hpp"
 

@@ -39,10 +39,10 @@ public:
 	void Input_MainStarPressed();
 	void InitialConfigure();
 	void SameOrBorn_0(const struct FS_PickupData& S_PickupData, const struct FS_PickupData& S_PickupData1, bool* IsBorn);
-	void InitialConfigureValue();
 	void Virtual_StartSpeedUp(float Delay);
-	void Local_StartGame();
+	void InitialConfigureValue();
 	void ReceiveTick(float DeltaSeconds);
+	void Local_StartGame();
 	void ReceiveBeginPlay();
 	void UserConstructionScript();
 

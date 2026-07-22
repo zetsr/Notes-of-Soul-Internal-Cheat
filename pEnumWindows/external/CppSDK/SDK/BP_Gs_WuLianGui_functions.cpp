@@ -64,33 +64,13 @@ void ABP_Gs_WuLianGui_C::interputSkill3()
 }
 
 
-// Function BP_Gs_WuLianGui.BP_Gs_WuLianGui_C.ReceiveTick
-// (Event, Public, BlueprintEvent)
-// Parameters:
-// float                                   DeltaSeconds                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_Gs_WuLianGui_C::ReceiveTick(float DeltaSeconds)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Gs_WuLianGui_C", "ReceiveTick");
-
-	Params::BP_Gs_WuLianGui_C_ReceiveTick Parms{};
-
-	Parms.DeltaSeconds = DeltaSeconds;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
 // Function BP_Gs_WuLianGui.BP_Gs_WuLianGui_C.Multicast_PlayKaiCheSound
 // (Net, NetMulticast, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    IsPlay                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                                    isPlay                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 // class USoundCue*                        Sound                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_Gs_WuLianGui_C::Multicast_PlayKaiCheSound(bool IsPlay, class USoundCue* Sound)
+void ABP_Gs_WuLianGui_C::Multicast_PlayKaiCheSound(bool isPlay, class USoundCue* Sound)
 {
 	static class UFunction* Func = nullptr;
 
@@ -99,7 +79,7 @@ void ABP_Gs_WuLianGui_C::Multicast_PlayKaiCheSound(bool IsPlay, class USoundCue*
 
 	Params::BP_Gs_WuLianGui_C_Multicast_PlayKaiCheSound Parms{};
 
-	Parms.IsPlay = IsPlay;
+	Parms.isPlay = isPlay;
 	Parms.Sound = Sound;
 
 	UObject::ProcessEvent(Func, &Parms);
@@ -813,6 +793,26 @@ void ABP_Gs_WuLianGui_C::localUpdateEvent()
 		Func = Class->GetFunction("BP_Gs_WuLianGui_C", "localUpdateEvent");
 
 	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_Gs_WuLianGui.BP_Gs_WuLianGui_C.ReceiveTick
+// (Event, Public, BlueprintEvent)
+// Parameters:
+// float                                   DeltaSeconds                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_Gs_WuLianGui_C::ReceiveTick(float DeltaSeconds)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_Gs_WuLianGui_C", "ReceiveTick");
+
+	Params::BP_Gs_WuLianGui_C_ReceiveTick Parms{};
+
+	Parms.DeltaSeconds = DeltaSeconds;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 

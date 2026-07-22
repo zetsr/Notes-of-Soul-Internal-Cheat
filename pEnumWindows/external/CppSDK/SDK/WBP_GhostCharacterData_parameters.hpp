@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "S_GhostData_structs.hpp"
 #include "S_CostConditionData_structs.hpp"
+#include "S_GhostData_structs.hpp"
 #include "SlateCore_structs.hpp"
 
 

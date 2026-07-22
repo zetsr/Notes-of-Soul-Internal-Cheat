@@ -10,9 +10,9 @@
 
 #include "Basic.hpp"
 
-#include "Engine_structs.hpp"
 #include "E_CommodityType_structs.hpp"
 #include "Str_HolidayExchangeItem_structs.hpp"
+#include "Engine_structs.hpp"
 
 
 SDK_NAMESPACE_START

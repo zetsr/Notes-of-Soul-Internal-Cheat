@@ -10,10 +10,10 @@
 
 #include "Basic.hpp"
 
+#include "S_SkillLevelData_structs.hpp"
 #include "S_CharacterSkills_structs.hpp"
 #include "E_CharacterType_structs.hpp"
 #include "E_CloudDataType_structs.hpp"
-#include "S_SkillLevelData_structs.hpp"
 #include "S_SKillsInfo_structs.hpp"
 
 

@@ -36,6 +36,42 @@ void ABP_StoneDoor1_C::ExecuteUbergraph_BP_StoneDoor1(int32 EntryPoint)
 }
 
 
+// Function BP_StoneDoor1.BP_StoneDoor1_C.DominateThisDoor
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// float                                   Delay                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    IsPositive                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+
+void ABP_StoneDoor1_C::DominateThisDoor(float Delay, bool IsPositive)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_StoneDoor1_C", "DominateThisDoor");
+
+	Params::BP_StoneDoor1_C_DominateThisDoor Parms{};
+
+	Parms.Delay = Delay;
+	Parms.IsPositive = IsPositive;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_StoneDoor1.BP_StoneDoor1_C.ReceiveBeginPlay
+// (Event, Protected, BlueprintEvent)
+
+void ABP_StoneDoor1_C::ReceiveBeginPlay()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_StoneDoor1_C", "ReceiveBeginPlay");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // Function BP_StoneDoor1.BP_StoneDoor1_C.Timeline_6__UpdateFunc
 // (BlueprintEvent)
 
@@ -73,42 +109,6 @@ void ABP_StoneDoor1_C::UserConstructionScript()
 
 	if (Func == nullptr)
 		Func = Class->GetFunction("BP_StoneDoor1_C", "UserConstructionScript");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_StoneDoor1.BP_StoneDoor1_C.DominateThisDoor
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// float                                   Delay                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    IsPositive                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void ABP_StoneDoor1_C::DominateThisDoor(float Delay, bool IsPositive)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_StoneDoor1_C", "DominateThisDoor");
-
-	Params::BP_StoneDoor1_C_DominateThisDoor Parms{};
-
-	Parms.Delay = Delay;
-	Parms.IsPositive = IsPositive;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_StoneDoor1.BP_StoneDoor1_C.ReceiveBeginPlay
-// (Event, Protected, BlueprintEvent)
-
-void ABP_StoneDoor1_C::ReceiveBeginPlay()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_StoneDoor1_C", "ReceiveBeginPlay");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

@@ -669,15 +669,6 @@ public:
 };
 DUMPER7_ASSERTS_BP_Gs_MiaoDao_C_BndEvt__CheckHuman_K2Node_ComponentBoundEvent_1_ComponentBeginOverlapSignature__DelegateSignature;
 
-// Function BP_Gs_MiaoDao.BP_Gs_MiaoDao_C.ReceiveTick
-// 0x0004 (0x0004 - 0x0000)
-struct BP_Gs_MiaoDao_C_ReceiveTick final
-{
-public:
-	float                                         DeltaSeconds;                                      // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_Gs_MiaoDao_C_ReceiveTick;
-
 // Function BP_Gs_MiaoDao.BP_Gs_MiaoDao_C.UserConstructionScript
 // 0x0008 (0x0008 - 0x0000)
 struct BP_Gs_MiaoDao_C_UserConstructionScript final
@@ -778,6 +769,15 @@ public:
 	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x01A4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_BP_Gs_MiaoDao_C_Skill1CheckHumen;
+
+// Function BP_Gs_MiaoDao.BP_Gs_MiaoDao_C.ReceiveTick
+// 0x0004 (0x0004 - 0x0000)
+struct BP_Gs_MiaoDao_C_ReceiveTick final
+{
+public:
+	float                                         DeltaSeconds;                                      // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_Gs_MiaoDao_C_ReceiveTick;
 
 // Function BP_Gs_MiaoDao.BP_Gs_MiaoDao_C.Input_ChangeMoveRightAxis
 // 0x0004 (0x0004 - 0x0000)

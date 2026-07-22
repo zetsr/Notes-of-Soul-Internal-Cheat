@@ -228,26 +228,6 @@ void ABP_Gs_ZhengZi_C::StartUpdatePortal(class ABP_Portal_C* CurrentPortal)
 }
 
 
-// Function BP_Gs_ZhengZi.BP_Gs_ZhengZi_C.ReceiveTick
-// (Event, Public, BlueprintEvent)
-// Parameters:
-// float                                   DeltaSeconds                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_Gs_ZhengZi_C::ReceiveTick(float DeltaSeconds)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Gs_ZhengZi_C", "ReceiveTick");
-
-	Params::BP_Gs_ZhengZi_C_ReceiveTick Parms{};
-
-	Parms.DeltaSeconds = DeltaSeconds;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
 // Function BP_Gs_ZhengZi.BP_Gs_ZhengZi_C.时间轴_0__UpdateFunc
 // (BlueprintEvent)
 
@@ -350,6 +330,26 @@ void ABP_Gs_ZhengZi_C::CanPutProtal(bool* Can)
 
 	if (Can != nullptr)
 		*Can = Parms.Can;
+}
+
+
+// Function BP_Gs_ZhengZi.BP_Gs_ZhengZi_C.ReceiveTick
+// (Event, Public, BlueprintEvent)
+// Parameters:
+// float                                   DeltaSeconds                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_Gs_ZhengZi_C::ReceiveTick(float DeltaSeconds)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_Gs_ZhengZi_C", "ReceiveTick");
+
+	Params::BP_Gs_ZhengZi_C_ReceiveTick Parms{};
+
+	Parms.DeltaSeconds = DeltaSeconds;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 

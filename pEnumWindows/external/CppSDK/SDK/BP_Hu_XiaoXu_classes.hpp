@@ -53,13 +53,13 @@ public:
 	void AddMainStarCount();
 	void Input_MainStarPressed();
 	void InitialConfigure();
-	void InitialConfigureValue();
 	void Virtual_StartSpeedUp(float Delay);
+	void InitialConfigureValue();
 	void Input_FlashLightPressed();
 	void Input_AttackReleased();
-	void Local_StartGame();
 	void ReceiveTick(float DeltaSeconds);
 	void Input_AttackPressed();
+	void Local_StartGame();
 	void ReceiveBeginPlay();
 	void UserConstructionScript();
 

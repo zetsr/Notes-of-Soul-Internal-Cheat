@@ -628,20 +628,6 @@ void ABP_Gs_XiaoHei_C::Virtual_KillSomeOne(class ABP_PlayerHuman_C* Human)
 }
 
 
-// Function BP_Gs_XiaoHei.BP_Gs_XiaoHei_C.Input_InteractPressed
-// (BlueprintCallable, BlueprintEvent)
-
-void ABP_Gs_XiaoHei_C::Input_InteractPressed()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Gs_XiaoHei_C", "Input_InteractPressed");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function BP_Gs_XiaoHei.BP_Gs_XiaoHei_C.AttackedOnePlayer
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -677,6 +663,20 @@ void ABP_Gs_XiaoHei_C::Input_TrapPressed()
 
 	if (Func == nullptr)
 		Func = Class->GetFunction("BP_Gs_XiaoHei_C", "Input_TrapPressed");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_Gs_XiaoHei.BP_Gs_XiaoHei_C.Input_InteractPressed
+// (BlueprintCallable, BlueprintEvent)
+
+void ABP_Gs_XiaoHei_C::Input_InteractPressed()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_Gs_XiaoHei_C", "Input_InteractPressed");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

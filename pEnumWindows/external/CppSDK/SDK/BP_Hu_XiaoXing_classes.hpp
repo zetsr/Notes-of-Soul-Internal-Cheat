@@ -44,8 +44,8 @@ public:
 	void InitialConfigure();
 	void MainStarTimeCount();
 	void Server_StartGame();
-	void InitialConfigureValue();
 	void Virtual_StartSpeedUp(float Delay);
+	void InitialConfigureValue();
 	void Local_StartGame();
 	void ReceiveBeginPlay();
 	void UserConstructionScript();

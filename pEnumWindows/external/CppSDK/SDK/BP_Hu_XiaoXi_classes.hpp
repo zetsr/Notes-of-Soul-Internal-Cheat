@@ -44,8 +44,8 @@ public:
 	void InitialConfigureValue();
 	void Server_SetHeartBeatState(int32 State);
 	void Local_StartGame();
-	void OnTakeDamage(float Damage, const class FString& Name_0, float CustomData, class AController* EventInstigator, class AActor* DamageCauser);
 	void ReceiveBeginPlay();
+	void OnTakeDamage(float Damage, const class FString& Name_0, float CustomData, class AController* EventInstigator, class AActor* DamageCauser);
 	void UserConstructionScript();
 
 public:

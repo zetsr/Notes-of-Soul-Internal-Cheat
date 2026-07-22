@@ -86,7 +86,6 @@ public:
 	void Input_FlashLightPressed();
 	void EndSkill1();
 	void BndEvt__CheckHuman_K2Node_ComponentBoundEvent_1_ComponentBeginOverlapSignature__DelegateSignature(class UPrimitiveComponent* OverlappedComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const struct FHitResult& SweepResult);
-	void ReceiveTick(float DeltaSeconds);
 	void AblServer_SpawnDaoQi();
 	void InitialConfigure();
 	void Input_AttackReleased();
@@ -96,6 +95,7 @@ public:
 	void AddGhostWalkingSpeed();
 	void ReduceSkiilsCD();
 	void Skill1CheckHumen(const struct FVector& EndLocation);
+	void ReceiveTick(float DeltaSeconds);
 	void Input_Skill1Released();
 	void Input_Skill1Pressed();
 	void Input_Skill2Pressed();
@@ -107,11 +107,11 @@ public:
 	void Virtual_HumanHasNoProtectBlood();
 	void Virtual_CheckHumanDoSomething(const TArray<class ABP_PlayerHuman_C*>& Human);
 	void Input_InteractReleased();
-	void SetBeStationary(bool IsBeStationary_0, int32 Level);
-	void Local_StartGame();
 	void Input_ResetPositionPressed();
-	void Input_InteractPressed();
+	void SetBeStationary(bool IsBeStationary_0, int32 Level);
 	void Input_TrapPressed();
+	void Local_StartGame();
+	void Input_InteractPressed();
 	void ReceiveBeginPlay();
 
 public:

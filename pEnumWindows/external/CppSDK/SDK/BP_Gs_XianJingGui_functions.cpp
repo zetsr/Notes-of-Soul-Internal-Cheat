@@ -336,26 +336,6 @@ void ABP_Gs_XianJingGui_C::FireBubble()
 }
 
 
-// Function BP_Gs_XianJingGui.BP_Gs_XianJingGui_C.ReceiveTick
-// (Event, Public, BlueprintEvent)
-// Parameters:
-// float                                   DeltaSeconds                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_Gs_XianJingGui_C::ReceiveTick(float DeltaSeconds)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Gs_XianJingGui_C", "ReceiveTick");
-
-	Params::BP_Gs_XianJingGui_C_ReceiveTick Parms{};
-
-	Parms.DeltaSeconds = DeltaSeconds;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
 // Function BP_Gs_XianJingGui.BP_Gs_XianJingGui_C.SomeOneTriggeredFakeBox
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -607,6 +587,26 @@ void ABP_Gs_XianJingGui_C::LocalUpdateHalfSecond()
 		Func = Class->GetFunction("BP_Gs_XianJingGui_C", "LocalUpdateHalfSecond");
 
 	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_Gs_XianJingGui.BP_Gs_XianJingGui_C.ReceiveTick
+// (Event, Public, BlueprintEvent)
+// Parameters:
+// float                                   DeltaSeconds                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_Gs_XianJingGui_C::ReceiveTick(float DeltaSeconds)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_Gs_XianJingGui_C", "ReceiveTick");
+
+	Params::BP_Gs_XianJingGui_C_ReceiveTick Parms{};
+
+	Parms.DeltaSeconds = DeltaSeconds;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 

@@ -11,9 +11,9 @@
 #include "Basic.hpp"
 
 #include "Engine_structs.hpp"
-#include "E_MoneyType_structs.hpp"
 #include "SlateCore_structs.hpp"
 #include "Abs_SpotlightMain_classes.hpp"
+#include "E_MoneyType_structs.hpp"
 
 
 SDK_NAMESPACE_START

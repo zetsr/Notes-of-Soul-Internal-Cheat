@@ -11,9 +11,9 @@
 #include "Basic.hpp"
 
 #include "E_PickupType_structs.hpp"
-#include "S_ItemPickUp_structs.hpp"
 #include "S_PickupData_structs.hpp"
 #include "S_ItemInfo_structs.hpp"
+#include "S_ItemPickUp_structs.hpp"
 #include "S_SkillEffectValue_structs.hpp"
 
 

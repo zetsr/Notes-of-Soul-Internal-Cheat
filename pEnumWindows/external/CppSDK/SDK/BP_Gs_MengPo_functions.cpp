@@ -424,26 +424,6 @@ void ABP_Gs_MengPo_C::Server_ChangeControl(bool IsControl, class ABP_MengPo_Caco
 }
 
 
-// Function BP_Gs_MengPo.BP_Gs_MengPo_C.ReceiveTick
-// (Event, Public, BlueprintEvent)
-// Parameters:
-// float                                   DeltaSeconds                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_Gs_MengPo_C::ReceiveTick(float DeltaSeconds)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Gs_MengPo_C", "ReceiveTick");
-
-	Params::BP_Gs_MengPo_C_ReceiveTick Parms{};
-
-	Parms.DeltaSeconds = DeltaSeconds;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
 // Function BP_Gs_MengPo.BP_Gs_MengPo_C.Input_FlashLightPressed
 // (BlueprintCallable, BlueprintEvent)
 
@@ -598,6 +578,26 @@ void ABP_Gs_MengPo_C::LocalUpdateHalfSecond()
 		Func = Class->GetFunction("BP_Gs_MengPo_C", "LocalUpdateHalfSecond");
 
 	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_Gs_MengPo.BP_Gs_MengPo_C.ReceiveTick
+// (Event, Public, BlueprintEvent)
+// Parameters:
+// float                                   DeltaSeconds                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_Gs_MengPo_C::ReceiveTick(float DeltaSeconds)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_Gs_MengPo_C", "ReceiveTick");
+
+	Params::BP_Gs_MengPo_C_ReceiveTick Parms{};
+
+	Parms.DeltaSeconds = DeltaSeconds;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 
@@ -766,20 +766,6 @@ void ABP_Gs_MengPo_C::AttackedOnePlayer(class ABP_PlayerHuman_C* Player, float R
 }
 
 
-// Function BP_Gs_MengPo.BP_Gs_MengPo_C.Input_InteractPressed
-// (BlueprintCallable, BlueprintEvent)
-
-void ABP_Gs_MengPo_C::Input_InteractPressed()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Gs_MengPo_C", "Input_InteractPressed");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function BP_Gs_MengPo.BP_Gs_MengPo_C.Input_TrapPressed
 // (BlueprintCallable, BlueprintEvent)
 
@@ -789,6 +775,20 @@ void ABP_Gs_MengPo_C::Input_TrapPressed()
 
 	if (Func == nullptr)
 		Func = Class->GetFunction("BP_Gs_MengPo_C", "Input_TrapPressed");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_Gs_MengPo.BP_Gs_MengPo_C.Input_InteractPressed
+// (BlueprintCallable, BlueprintEvent)
+
+void ABP_Gs_MengPo_C::Input_InteractPressed()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_Gs_MengPo_C", "Input_InteractPressed");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

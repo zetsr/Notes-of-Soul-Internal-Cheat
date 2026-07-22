@@ -12,9 +12,9 @@
 
 #include "Engine_structs.hpp"
 #include "Engine_classes.hpp"
-#include "LotteryBoxType_structs.hpp"
 #include "LotteryState_structs.hpp"
 #include "AnimGraphRuntime_structs.hpp"
+#include "LotteryBoxType_structs.hpp"
 
 
 SDK_NAMESPACE_START

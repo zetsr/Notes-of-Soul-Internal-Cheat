@@ -10,10 +10,10 @@
 
 #include "Basic.hpp"
 
+#include "LeaderBoard_structs.hpp"
 #include "SlateCore_structs.hpp"
 #include "UWorksCore_structs.hpp"
 #include "Engine_structs.hpp"
-#include "LeaderBoard_structs.hpp"
 
 
 SDK_NAMESPACE_START

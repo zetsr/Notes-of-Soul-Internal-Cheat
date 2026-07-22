@@ -12,8 +12,8 @@
 
 #include "UMG_classes.hpp"
 #include "Engine_structs.hpp"
-#include "S_MissionReward_structs.hpp"
 #include "E_MissionName_structs.hpp"
+#include "S_MissionReward_structs.hpp"
 #include "E_CharacterType_structs.hpp"
 
 

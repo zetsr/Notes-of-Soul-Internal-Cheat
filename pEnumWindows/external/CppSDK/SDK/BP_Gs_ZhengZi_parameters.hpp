@@ -430,15 +430,6 @@ public:
 };
 DUMPER7_ASSERTS_BP_Gs_ZhengZi_C_StartUpdatePortal;
 
-// Function BP_Gs_ZhengZi.BP_Gs_ZhengZi_C.ReceiveTick
-// 0x0004 (0x0004 - 0x0000)
-struct BP_Gs_ZhengZi_C_ReceiveTick final
-{
-public:
-	float                                         DeltaSeconds;                                      // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_Gs_ZhengZi_C_ReceiveTick;
-
 // Function BP_Gs_ZhengZi.BP_Gs_ZhengZi_C.CanPutProtal
 // 0x00A8 (0x00A8 - 0x0000)
 struct BP_Gs_ZhengZi_C_CanPutProtal final
@@ -481,6 +472,15 @@ public:
 	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x00A2(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
 DUMPER7_ASSERTS_BP_Gs_ZhengZi_C_CanPutProtal;
+
+// Function BP_Gs_ZhengZi.BP_Gs_ZhengZi_C.ReceiveTick
+// 0x0004 (0x0004 - 0x0000)
+struct BP_Gs_ZhengZi_C_ReceiveTick final
+{
+public:
+	float                                         DeltaSeconds;                                      // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_Gs_ZhengZi_C_ReceiveTick;
 
 // Function BP_Gs_ZhengZi.BP_Gs_ZhengZi_C.SetBeStationary
 // 0x0008 (0x0008 - 0x0000)

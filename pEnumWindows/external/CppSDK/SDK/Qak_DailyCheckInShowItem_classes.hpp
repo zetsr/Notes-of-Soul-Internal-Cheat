@@ -10,9 +10,9 @@
 
 #include "Basic.hpp"
 
+#include "Abs_DailyCheckInShowItem_classes.hpp"
 #include "Engine_structs.hpp"
 #include "SlateCore_structs.hpp"
-#include "Abs_DailyCheckInShowItem_classes.hpp"
 
 
 SDK_NAMESPACE_START

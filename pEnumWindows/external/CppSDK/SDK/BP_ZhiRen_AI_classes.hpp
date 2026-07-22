@@ -44,7 +44,7 @@ public:
 	void ExecuteUbergraph_BP_ZhiRen_AI(int32 EntryPoint);
 	void Multicast_SstSoundTime(int32 Lv);
 	void server_SstSoundTime(int32 Lv);
-	void Multicast_PlaySound(bool IsPlay);
+	void Multicast_PlaySound(bool isPlay);
 	void Multicast_ChangeMesh(class USkeletalMesh* SkeletalMesh);
 	void Multicast_SetZhiRenVisible();
 	void DestroyInteractActor();

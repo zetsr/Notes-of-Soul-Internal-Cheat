@@ -10,9 +10,9 @@
 
 #include "Basic.hpp"
 
-#include "E_CharacterCampType_structs.hpp"
 #include "S_Task_structs.hpp"
 #include "S_CostConditionData_structs.hpp"
+#include "E_CharacterCampType_structs.hpp"
 
 
 SDK_NAMESPACE_START

@@ -98,12 +98,12 @@ public:
 	void Input_Skill1Pressed();
 	void Input_ChangeMoveForwardAxis(float Axis);
 	void Input_AttackPressed();
-	void SetBeStationary(bool IsBeStationary_0, int32 Level);
 	void Virtual_KillSomeOne(class ABP_PlayerHuman_C* Human);
-	void Input_InteractPressed();
+	void SetBeStationary(bool IsBeStationary_0, int32 Level);
 	void Input_TrapReleased();
 	void Input_TrapPressed();
 	void AttackedOnePlayer(class ABP_PlayerHuman_C* Player, float RealDamage, const class FString& DamageName, int32 ForcePlayWhich);
+	void Input_InteractPressed();
 	void Local_StartGame();
 	void ReceiveBeginPlay();
 	void IsDoingAnything(bool* Param_IsDoingAnything_0);

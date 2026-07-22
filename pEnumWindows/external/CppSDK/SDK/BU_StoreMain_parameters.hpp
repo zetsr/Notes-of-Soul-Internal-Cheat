@@ -11,10 +11,10 @@
 #include "Basic.hpp"
 
 #include "UWorks_structs.hpp"
-#include "UMG_structs.hpp"
-#include "E_CommodityType_structs.hpp"
-#include "Engine_structs.hpp"
 #include "S_ShopInfo_structs.hpp"
+#include "UMG_structs.hpp"
+#include "Engine_structs.hpp"
+#include "E_CommodityType_structs.hpp"
 
 
 SDK_NAMESPACE_START

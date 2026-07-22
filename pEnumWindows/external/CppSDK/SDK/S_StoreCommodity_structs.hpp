@@ -10,16 +10,16 @@
 
 #include "Basic.hpp"
 
+#include "E_GameOverAnimation_structs.hpp"
+#include "E_TitleType_structs.hpp"
+#include "E_GiftBagType_structs.hpp"
+#include "E_Clothes_structs.hpp"
 #include "E_CommodityType_structs.hpp"
-#include "E_GameStartAnimation_structs.hpp"
 #include "E_AccessoryType_structs.hpp"
 #include "E_MoneyType_structs.hpp"
-#include "E_Clothes_structs.hpp"
+#include "E_GameStartAnimation_structs.hpp"
 #include "E_ActionType_structs.hpp"
-#include "E_GameOverAnimation_structs.hpp"
-#include "E_GiftBagType_structs.hpp"
 #include "E_SwordType_structs.hpp"
-#include "E_TitleType_structs.hpp"
 
 
 SDK_NAMESPACE_START

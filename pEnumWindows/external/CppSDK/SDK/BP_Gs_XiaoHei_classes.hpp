@@ -99,9 +99,9 @@ public:
 	void Input_Skill1Pressed();
 	void Input_AttackPressed();
 	void Virtual_KillSomeOne(class ABP_PlayerHuman_C* Human);
-	void Input_InteractPressed();
 	void AttackedOnePlayer(class ABP_PlayerHuman_C* Player, float RealDamage, const class FString& DamageName, int32 ForcePlayWhich);
 	void Input_TrapPressed();
+	void Input_InteractPressed();
 	void Local_StartGame();
 	void ReceiveBeginPlay();
 

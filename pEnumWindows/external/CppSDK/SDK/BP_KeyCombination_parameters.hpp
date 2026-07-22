@@ -12,9 +12,9 @@
 
 #include "EKeyCombinationDisplay_structs.hpp"
 #include "SKeyInput_structs.hpp"
-#include "EKeyConflict_structs.hpp"
 #include "InputCore_structs.hpp"
 #include "SKeyConflict_structs.hpp"
+#include "EKeyConflict_structs.hpp"
 #include "SKeyActionSave_structs.hpp"
 
 

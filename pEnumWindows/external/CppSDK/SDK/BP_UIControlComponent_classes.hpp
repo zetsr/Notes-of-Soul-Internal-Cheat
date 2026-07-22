@@ -10,10 +10,10 @@
 
 #include "Basic.hpp"
 
-#include "Enu_WarSituationEvent_structs.hpp"
 #include "Engine_structs.hpp"
 #include "Engine_classes.hpp"
 #include "LotteryBoxType_structs.hpp"
+#include "Enu_WarSituationEvent_structs.hpp"
 #include "Enu_InitInterfaceType_structs.hpp"
 
 

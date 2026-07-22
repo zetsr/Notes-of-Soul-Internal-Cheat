@@ -10,14 +10,14 @@
 
 #include "Basic.hpp"
 
+#include "E_SundryType_structs.hpp"
 #include "Engine_classes.hpp"
+#include "E_SpecialCommodityType_structs.hpp"
 #include "E_MissionName_structs.hpp"
 #include "E_FlashLightType_structs.hpp"
-#include "E_SpecialCommodityType_structs.hpp"
 #include "E_CharacterType_structs.hpp"
 #include "E_SwordType_structs.hpp"
 #include "E_ActionType_structs.hpp"
-#include "E_SundryType_structs.hpp"
 #include "E_TitleType_structs.hpp"
 #include "E_Clothes_structs.hpp"
 #include "E_CloudDataType_structs.hpp"

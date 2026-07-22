@@ -10,29 +10,29 @@
 
 #include "Basic.hpp"
 
-#include "S_HumanSwordInfo_structs.hpp"
 #include "S_PetInfo_structs.hpp"
 #include "SlateCore_structs.hpp"
 #include "S_SaveAction_structs.hpp"
-#include "ST_ClothsLevel_structs.hpp"
+#include "S_HumanSkinsInfo_structs.hpp"
 #include "E_CharacterCampType_structs.hpp"
 #include "Engine_structs.hpp"
 #include "Str_CharacterSpecialOwnedSkeletalMesh_Unit_structs.hpp"
-#include "S_AccessoriesInfo_structs.hpp"
 #include "E_AccessoryType_structs.hpp"
+#include "S_AccessoriesInfo_structs.hpp"
 #include "E_GameOverAnimation_structs.hpp"
 #include "S_FlashLightInfo_structs.hpp"
+#include "S_HumanSwordInfo_structs.hpp"
 #include "AbleCore_structs.hpp"
 #include "CoreUObject_structs.hpp"
+#include "S_HumenActions_structs.hpp"
 #include "S_TitleData_structs.hpp"
 #include "E_CharacterType_structs.hpp"
 #include "E_CharacterAnimationType_structs.hpp"
 #include "S_CharacterAnimationInfo_structs.hpp"
 #include "E_Clothes_structs.hpp"
 #include "S_SkinInfo_structs.hpp"
+#include "ST_ClothsLevel_structs.hpp"
 #include "E_ActionType_structs.hpp"
-#include "S_HumenActions_structs.hpp"
-#include "S_HumanSkinsInfo_structs.hpp"
 
 
 SDK_NAMESPACE_START
@@ -1078,7 +1078,7 @@ DUMPER7_ASSERTS_WBP_New_DressingRoomEx_C_SpawnRecordingActor;
 struct WBP_New_DressingRoomEx_C_SetCurrentWeapon final
 {
 public:
-	class FName                                   Weapon;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FName                                   weapon;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class FName                                   localWeapon;                                       // 0x0008(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsHuman_Male_IsHuman;                     // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_IsHuman_Male_IsMale;                      // 0x0011(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)

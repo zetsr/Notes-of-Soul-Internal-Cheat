@@ -96,10 +96,10 @@ void ABP_XiaoHeiWaterPoloBall_C::BndEvt__Box_K2Node_ComponentBoundEvent_0_Compon
 // (Net, NetReliable, NetServer, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // const struct FVector&                   Loc                                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// const struct FRotator&                  Rota                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// const struct FRotator&                  rota                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 // class UParticleSystem*                  Particle                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_XiaoHeiWaterPoloBall_C::Server_ShowParticle(const struct FVector& Loc, const struct FRotator& Rota, class UParticleSystem* Particle)
+void ABP_XiaoHeiWaterPoloBall_C::Server_ShowParticle(const struct FVector& Loc, const struct FRotator& rota, class UParticleSystem* Particle)
 {
 	static class UFunction* Func = nullptr;
 
@@ -109,7 +109,7 @@ void ABP_XiaoHeiWaterPoloBall_C::Server_ShowParticle(const struct FVector& Loc, 
 	Params::BP_XiaoHeiWaterPoloBall_C_Server_ShowParticle Parms{};
 
 	Parms.Loc = std::move(Loc);
-	Parms.Rota = std::move(Rota);
+	Parms.rota = std::move(rota);
 	Parms.Particle = Particle;
 
 	UObject::ProcessEvent(Func, &Parms);
@@ -140,10 +140,10 @@ void ABP_XiaoHeiWaterPoloBall_C::Server_SpawnHitParticle(const struct FVector& L
 // (Net, NetReliable, NetMulticast, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // const struct FVector&                   Loc                                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// const struct FRotator&                  Rota                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// const struct FRotator&                  rota                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 // class UParticleSystem*                  Particle                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_XiaoHeiWaterPoloBall_C::Multicast_ShowParticle(const struct FVector& Loc, const struct FRotator& Rota, class UParticleSystem* Particle)
+void ABP_XiaoHeiWaterPoloBall_C::Multicast_ShowParticle(const struct FVector& Loc, const struct FRotator& rota, class UParticleSystem* Particle)
 {
 	static class UFunction* Func = nullptr;
 
@@ -153,7 +153,7 @@ void ABP_XiaoHeiWaterPoloBall_C::Multicast_ShowParticle(const struct FVector& Lo
 	Params::BP_XiaoHeiWaterPoloBall_C_Multicast_ShowParticle Parms{};
 
 	Parms.Loc = std::move(Loc);
-	Parms.Rota = std::move(Rota);
+	Parms.rota = std::move(rota);
 	Parms.Particle = Particle;
 
 	UObject::ProcessEvent(Func, &Parms);

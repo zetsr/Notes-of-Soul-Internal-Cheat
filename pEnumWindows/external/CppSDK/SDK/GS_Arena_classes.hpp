@@ -11,8 +11,8 @@
 #include "Basic.hpp"
 
 #include "KxFramework_classes.hpp"
-#include "Enu_WarSituationEvent_structs.hpp"
 #include "Engine_structs.hpp"
+#include "Enu_WarSituationEvent_structs.hpp"
 
 
 SDK_NAMESPACE_START

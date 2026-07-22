@@ -370,26 +370,6 @@ void ABP_Gs_ZhiRen_C::InitialConfigure()
 }
 
 
-// Function BP_Gs_ZhiRen.BP_Gs_ZhiRen_C.ReceiveTick
-// (Event, Public, BlueprintEvent)
-// Parameters:
-// float                                   DeltaSeconds                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_Gs_ZhiRen_C::ReceiveTick(float DeltaSeconds)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Gs_ZhiRen_C", "ReceiveTick");
-
-	Params::BP_Gs_ZhiRen_C_ReceiveTick Parms{};
-
-	Parms.DeltaSeconds = DeltaSeconds;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
 // Function BP_Gs_ZhiRen.BP_Gs_ZhiRen_C.InpActEvt_V_K2Node_InputKeyEvent_0
 // (BlueprintEvent)
 // Parameters:
@@ -651,6 +631,26 @@ void ABP_Gs_ZhiRen_C::RefreshSkill2CD()
 }
 
 
+// Function BP_Gs_ZhiRen.BP_Gs_ZhiRen_C.ReceiveTick
+// (Event, Public, BlueprintEvent)
+// Parameters:
+// float                                   DeltaSeconds                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_Gs_ZhiRen_C::ReceiveTick(float DeltaSeconds)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_Gs_ZhiRen_C", "ReceiveTick");
+
+	Params::BP_Gs_ZhiRen_C_ReceiveTick Parms{};
+
+	Parms.DeltaSeconds = DeltaSeconds;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
 // Function BP_Gs_ZhiRen.BP_Gs_ZhiRen_C.Input_Skill2Released
 // (BlueprintCallable, BlueprintEvent)
 
@@ -735,20 +735,6 @@ void ABP_Gs_ZhiRen_C::Input_ResetPositionPressed()
 }
 
 
-// Function BP_Gs_ZhiRen.BP_Gs_ZhiRen_C.Input_InteractPressed
-// (BlueprintCallable, BlueprintEvent)
-
-void ABP_Gs_ZhiRen_C::Input_InteractPressed()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Gs_ZhiRen_C", "Input_InteractPressed");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function BP_Gs_ZhiRen.BP_Gs_ZhiRen_C.Input_TrapPressed
 // (BlueprintCallable, BlueprintEvent)
 
@@ -758,6 +744,20 @@ void ABP_Gs_ZhiRen_C::Input_TrapPressed()
 
 	if (Func == nullptr)
 		Func = Class->GetFunction("BP_Gs_ZhiRen_C", "Input_TrapPressed");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_Gs_ZhiRen.BP_Gs_ZhiRen_C.Input_InteractPressed
+// (BlueprintCallable, BlueprintEvent)
+
+void ABP_Gs_ZhiRen_C::Input_InteractPressed()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_Gs_ZhiRen_C", "Input_InteractPressed");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

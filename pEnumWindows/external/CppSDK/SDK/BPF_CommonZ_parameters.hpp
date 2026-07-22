@@ -11,9 +11,9 @@
 #include "Basic.hpp"
 
 #include "E_CharacterType_structs.hpp"
-#include "S_AwardInfo_structs.hpp"
 #include "E_CloudDataType_structs.hpp"
 #include "CoreUObject_structs.hpp"
+#include "S_AwardInfo_structs.hpp"
 #include "S_VoiceAboutSKin_structs.hpp"
 #include "E_SwordType_structs.hpp"
 #include "E_CharacterCampType_structs.hpp"

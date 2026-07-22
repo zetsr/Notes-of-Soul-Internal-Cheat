@@ -71,7 +71,6 @@ public:
 	void CancelFireBubble();
 	void SpawnBubble();
 	void FireBubble();
-	void ReceiveTick(float DeltaSeconds);
 	void SomeOneTriggeredFakeBox(class ABP_ElementBoxBase_C* ElementBox_0, class ABP_PlayerHuman_C* Human);
 	void StartCrazy();
 	void Multicast_SetIsCrazyMoving(bool Is);
@@ -86,6 +85,7 @@ public:
 	void GetSpawnBoxLocation(struct FVector* Location, class ABP_ElementBoxBase_C** ElementBox_0);
 	void ShowAllElementBox(bool IsShow);
 	void LocalUpdateHalfSecond();
+	void ReceiveTick(float DeltaSeconds);
 	void Input_Skill3Pressed();
 	void Input_Skill2Pressed();
 	void Input_Skill1Pressed();

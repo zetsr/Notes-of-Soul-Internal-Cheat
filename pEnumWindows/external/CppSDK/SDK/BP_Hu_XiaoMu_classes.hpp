@@ -10,9 +10,9 @@
 
 #include "Basic.hpp"
 
+#include "E_PickupType_structs.hpp"
 #include "Engine_structs.hpp"
 #include "BP_PlayerHuman_classes.hpp"
-#include "E_PickupType_structs.hpp"
 
 
 SDK_NAMESPACE_START

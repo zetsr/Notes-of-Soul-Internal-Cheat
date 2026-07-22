@@ -10,10 +10,10 @@
 
 #include "Basic.hpp"
 
-#include "E_CharacterType_structs.hpp"
+#include "Engine_structs.hpp"
 #include "S_SheNvDaXiaoShe_structs.hpp"
 #include "CoreUObject_structs.hpp"
-#include "Engine_structs.hpp"
+#include "E_CharacterType_structs.hpp"
 
 
 SDK_NAMESPACE_START
@@ -755,15 +755,6 @@ public:
 };
 DUMPER7_ASSERTS_BP_Gs_SheNv_C_Server_SetMeshHidden;
 
-// Function BP_Gs_SheNv.BP_Gs_SheNv_C.ReceiveTick
-// 0x0004 (0x0004 - 0x0000)
-struct BP_Gs_SheNv_C_ReceiveTick final
-{
-public:
-	float                                         DeltaSeconds;                                      // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_Gs_SheNv_C_ReceiveTick;
-
 // Function BP_Gs_SheNv.BP_Gs_SheNv_C.CheckAroundHumanPlayer
 // 0x0070 (0x0070 - 0x0000)
 struct BP_Gs_SheNv_C_CheckAroundHumanPlayer final
@@ -940,6 +931,15 @@ public:
 	bool                                          CallFunc_LessEqual_FloatFloat_ReturnValue;         // 0x008C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
 DUMPER7_ASSERTS_BP_Gs_SheNv_C_CheckHumanCanBeHitBySkill2;
+
+// Function BP_Gs_SheNv.BP_Gs_SheNv_C.ReceiveTick
+// 0x0004 (0x0004 - 0x0000)
+struct BP_Gs_SheNv_C_ReceiveTick final
+{
+public:
+	float                                         DeltaSeconds;                                      // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_Gs_SheNv_C_ReceiveTick;
 
 // Function BP_Gs_SheNv.BP_Gs_SheNv_C.Input_ChangeMoveRightAxis
 // 0x0004 (0x0004 - 0x0000)

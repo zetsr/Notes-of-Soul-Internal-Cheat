@@ -33,8 +33,8 @@ public:
 	void InitialConfigure();
 	void Server_DoMainStar();
 	void Input_MainStarPressed();
-	void InitialConfigureValue();
 	void Virtual_StartSpeedUp(float Delay);
+	void InitialConfigureValue();
 	void ReceiveBeginPlay();
 	void UserConstructionScript();
 

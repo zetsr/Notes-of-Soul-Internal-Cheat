@@ -438,26 +438,6 @@ void ABP_Gs_MiaoDao_C::BndEvt__CheckHuman_K2Node_ComponentBoundEvent_1_Component
 }
 
 
-// Function BP_Gs_MiaoDao.BP_Gs_MiaoDao_C.ReceiveTick
-// (Event, Public, BlueprintEvent)
-// Parameters:
-// float                                   DeltaSeconds                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_Gs_MiaoDao_C::ReceiveTick(float DeltaSeconds)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Gs_MiaoDao_C", "ReceiveTick");
-
-	Params::BP_Gs_MiaoDao_C_ReceiveTick Parms{};
-
-	Parms.DeltaSeconds = DeltaSeconds;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
 // Function BP_Gs_MiaoDao.BP_Gs_MiaoDao_C.AblServer_SpawnDaoQi
 // (BlueprintCallable, BlueprintEvent)
 
@@ -585,6 +565,26 @@ void ABP_Gs_MiaoDao_C::Skill1CheckHumen(const struct FVector& EndLocation)
 	Params::BP_Gs_MiaoDao_C_Skill1CheckHumen Parms{};
 
 	Parms.EndLocation = std::move(EndLocation);
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_Gs_MiaoDao.BP_Gs_MiaoDao_C.ReceiveTick
+// (Event, Public, BlueprintEvent)
+// Parameters:
+// float                                   DeltaSeconds                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_Gs_MiaoDao_C::ReceiveTick(float DeltaSeconds)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_Gs_MiaoDao_C", "ReceiveTick");
+
+	Params::BP_Gs_MiaoDao_C_ReceiveTick Parms{};
+
+	Parms.DeltaSeconds = DeltaSeconds;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -762,6 +762,20 @@ void ABP_Gs_MiaoDao_C::Input_InteractReleased()
 }
 
 
+// Function BP_Gs_MiaoDao.BP_Gs_MiaoDao_C.Input_ResetPositionPressed
+// (BlueprintCallable, BlueprintEvent)
+
+void ABP_Gs_MiaoDao_C::Input_ResetPositionPressed()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_Gs_MiaoDao_C", "Input_ResetPositionPressed");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // Function BP_Gs_MiaoDao.BP_Gs_MiaoDao_C.SetBeStationary
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -784,6 +798,20 @@ void ABP_Gs_MiaoDao_C::SetBeStationary(bool IsBeStationary_0, int32 Level)
 }
 
 
+// Function BP_Gs_MiaoDao.BP_Gs_MiaoDao_C.Input_TrapPressed
+// (BlueprintCallable, BlueprintEvent)
+
+void ABP_Gs_MiaoDao_C::Input_TrapPressed()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_Gs_MiaoDao_C", "Input_TrapPressed");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // Function BP_Gs_MiaoDao.BP_Gs_MiaoDao_C.Local_StartGame
 // (BlueprintCallable, BlueprintEvent)
 
@@ -798,20 +826,6 @@ void ABP_Gs_MiaoDao_C::Local_StartGame()
 }
 
 
-// Function BP_Gs_MiaoDao.BP_Gs_MiaoDao_C.Input_ResetPositionPressed
-// (BlueprintCallable, BlueprintEvent)
-
-void ABP_Gs_MiaoDao_C::Input_ResetPositionPressed()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Gs_MiaoDao_C", "Input_ResetPositionPressed");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function BP_Gs_MiaoDao.BP_Gs_MiaoDao_C.Input_InteractPressed
 // (BlueprintCallable, BlueprintEvent)
 
@@ -821,20 +835,6 @@ void ABP_Gs_MiaoDao_C::Input_InteractPressed()
 
 	if (Func == nullptr)
 		Func = Class->GetFunction("BP_Gs_MiaoDao_C", "Input_InteractPressed");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_Gs_MiaoDao.BP_Gs_MiaoDao_C.Input_TrapPressed
-// (BlueprintCallable, BlueprintEvent)
-
-void ABP_Gs_MiaoDao_C::Input_TrapPressed()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Gs_MiaoDao_C", "Input_TrapPressed");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

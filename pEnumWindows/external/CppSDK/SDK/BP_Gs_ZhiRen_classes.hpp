@@ -99,7 +99,6 @@ public:
 	void FireSkill1(const struct FVector& Location, bool IsPlayAnim);
 	void Server_SpawnZhiRenNoMoveOnLoc(const struct FVector& Loc, bool IsPlayAnim);
 	void InitialConfigure();
-	void ReceiveTick(float DeltaSeconds);
 	void InpActEvt_V_K2Node_InputKeyEvent_0(const struct FKey& Key);
 	void SetCheckHumanBoomScale__UpdateFunc();
 	void SetCheckHumanBoomScale__FinishedFunc();
@@ -116,14 +115,15 @@ public:
 	void CanUseSkill(bool* CanUse);
 	void BoomDamage();
 	void RefreshSkill2CD();
+	void ReceiveTick(float DeltaSeconds);
 	void Input_Skill2Released();
 	void Input_Skill3Pressed();
 	void Input_Skill2Pressed();
 	void Input_Skill1Pressed();
 	void Input_AttackPressed();
 	void Input_ResetPositionPressed();
-	void Input_InteractPressed();
 	void Input_TrapPressed();
+	void Input_InteractPressed();
 	void Local_StartGame();
 	void ReceiveBeginPlay();
 

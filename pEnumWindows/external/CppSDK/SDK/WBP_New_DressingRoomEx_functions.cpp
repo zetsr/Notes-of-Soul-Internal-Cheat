@@ -1464,9 +1464,9 @@ void UWBP_New_DressingRoomEx_C::SpawnRecordingActor()
 // Function WBP_New_DressingRoomEx.WBP_New_DressingRoomEx_C.SetCurrentWeapon
 // (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class FName                             Weapon                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class FName                             weapon                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_New_DressingRoomEx_C::SetCurrentWeapon(class FName Weapon)
+void UWBP_New_DressingRoomEx_C::SetCurrentWeapon(class FName weapon)
 {
 	static class UFunction* Func = nullptr;
 
@@ -1475,7 +1475,7 @@ void UWBP_New_DressingRoomEx_C::SetCurrentWeapon(class FName Weapon)
 
 	Params::WBP_New_DressingRoomEx_C_SetCurrentWeapon Parms{};
 
-	Parms.Weapon = Weapon;
+	Parms.weapon = weapon;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

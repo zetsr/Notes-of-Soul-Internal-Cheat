@@ -10,16 +10,16 @@
 
 #include "Basic.hpp"
 
-#include "SKeyActionSave_structs.hpp"
 #include "EModifySetting_structs.hpp"
-#include "SVideoResolution_structs.hpp"
+#include "SKeyConflict_structs.hpp"
 #include "Engine_structs.hpp"
 #include "CoreUObject_structs.hpp"
-#include "SKeyConflict_structs.hpp"
 #include "EKeyConflict_structs.hpp"
+#include "SVideoResolution_structs.hpp"
+#include "SKeyActionSave_structs.hpp"
 #include "SKeyAction_structs.hpp"
-#include "EAudioType_structs.hpp"
 #include "SAudioUpdateStruct_structs.hpp"
+#include "EAudioType_structs.hpp"
 
 
 SDK_NAMESPACE_START

@@ -54,7 +54,6 @@ public:
 	void Input_VoicePressed();
 	void Server_StartGame();
 	void BndEvt__BPC_PlayerInteract_K2Node_ComponentBoundEvent_1_OnProgressCompleted__DelegateSignature(const class FString& Name_0);
-	void ReceiveTick(float DeltaSeconds);
 	void Multicast_DisappearZhaoHunFan(float CDTime);
 	void Server_SpawnZhaoHunFan();
 	void Server_DeleteZhaoHunFan(int32 Index_0);
@@ -70,11 +69,12 @@ public:
 	void GetZhaoHunFanMeshByCloth(class USkeletalMesh** Mesh_0);
 	void CheckIsBesideElementSlot(bool* IsBeside);
 	void ReduceSkill1CD();
+	void ReceiveTick(float DeltaSeconds);
 	void Input_Skill3Pressed();
 	void Input_Skill2Pressed();
 	void Input_Skill1Pressed();
-	void Input_AttackPressed();
 	void Input_LookRight(float Axis);
+	void Input_AttackPressed();
 	void Input_TrapPressed();
 	void AttackedOnePlayer(class ABP_PlayerHuman_C* Player, float RealDamage, const class FString& DamageName, int32 ForcePlayWhich);
 	void Local_StartGame();

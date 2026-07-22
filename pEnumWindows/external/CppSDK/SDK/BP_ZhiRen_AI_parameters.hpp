@@ -148,7 +148,7 @@ public:
 	class ABP_PlayerHuman_C*                      K2Node_DynamicCast_AsBP_Player_Human_2;            // 0x0328(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess_3;                     // 0x0330(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_Not_PreBool_ReturnValue_10;               // 0x0331(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          K2Node_CustomEvent_IsPlay;                         // 0x0332(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          K2Node_CustomEvent_isPlay;                         // 0x0332(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_333[0x1];                                      // 0x0333(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
 	class FName                                   ___name_Variable_1;                                // 0x0334(0x0008)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Greater_FloatFloat_ReturnValue_1;         // 0x033C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -193,7 +193,7 @@ DUMPER7_ASSERTS_BP_ZhiRen_AI_C_server_SstSoundTime;
 struct BP_ZhiRen_AI_C_Multicast_PlaySound final
 {
 public:
-	bool                                          IsPlay;                                            // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          isPlay;                                            // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
 DUMPER7_ASSERTS_BP_ZhiRen_AI_C_Multicast_PlaySound;
 

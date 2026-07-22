@@ -334,20 +334,6 @@ void ABP_Hu_XiaoXu_C::InitialConfigure()
 }
 
 
-// Function BP_Hu_XiaoXu.BP_Hu_XiaoXu_C.InitialConfigureValue
-// (BlueprintCallable, BlueprintEvent)
-
-void ABP_Hu_XiaoXu_C::InitialConfigureValue()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Hu_XiaoXu_C", "InitialConfigureValue");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function BP_Hu_XiaoXu.BP_Hu_XiaoXu_C.Virtual_StartSpeedUp
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -365,6 +351,20 @@ void ABP_Hu_XiaoXu_C::Virtual_StartSpeedUp(float Delay)
 	Parms.Delay = Delay;
 
 	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_Hu_XiaoXu.BP_Hu_XiaoXu_C.InitialConfigureValue
+// (BlueprintCallable, BlueprintEvent)
+
+void ABP_Hu_XiaoXu_C::InitialConfigureValue()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_Hu_XiaoXu_C", "InitialConfigureValue");
+
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 
@@ -391,20 +391,6 @@ void ABP_Hu_XiaoXu_C::Input_AttackReleased()
 
 	if (Func == nullptr)
 		Func = Class->GetFunction("BP_Hu_XiaoXu_C", "Input_AttackReleased");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_Hu_XiaoXu.BP_Hu_XiaoXu_C.Local_StartGame
-// (BlueprintCallable, BlueprintEvent)
-
-void ABP_Hu_XiaoXu_C::Local_StartGame()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Hu_XiaoXu_C", "Local_StartGame");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -439,6 +425,20 @@ void ABP_Hu_XiaoXu_C::Input_AttackPressed()
 
 	if (Func == nullptr)
 		Func = Class->GetFunction("BP_Hu_XiaoXu_C", "Input_AttackPressed");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_Hu_XiaoXu.BP_Hu_XiaoXu_C.Local_StartGame
+// (BlueprintCallable, BlueprintEvent)
+
+void ABP_Hu_XiaoXu_C::Local_StartGame()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_Hu_XiaoXu_C", "Local_StartGame");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

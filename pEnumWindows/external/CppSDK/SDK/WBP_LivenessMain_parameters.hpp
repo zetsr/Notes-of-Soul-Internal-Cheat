@@ -10,15 +10,15 @@
 
 #include "Basic.hpp"
 
+#include "S_Task_structs.hpp"
+#include "S_Liveness_structs.hpp"
 #include "CoreUObject_structs.hpp"
+#include "S_TakeTurns_structs.hpp"
 #include "SCUE4_structs.hpp"
 #include "SlateCore_structs.hpp"
 #include "Engine_structs.hpp"
 #include "UMG_structs.hpp"
 #include "InputCore_structs.hpp"
-#include "S_Task_structs.hpp"
-#include "S_TakeTurns_structs.hpp"
-#include "S_Liveness_structs.hpp"
 
 
 SDK_NAMESPACE_START

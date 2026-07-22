@@ -11,9 +11,9 @@
 #include "Basic.hpp"
 
 #include "CoreUObject_structs.hpp"
+#include "E_MissionName_structs.hpp"
 #include "SCUE4_structs.hpp"
 #include "Engine_structs.hpp"
-#include "E_MissionName_structs.hpp"
 #include "E_CharacterType_structs.hpp"
 
 

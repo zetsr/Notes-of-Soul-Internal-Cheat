@@ -10,10 +10,10 @@
 
 #include "Basic.hpp"
 
+#include "E_SwordType_structs.hpp"
 #include "UMG_classes.hpp"
 #include "Engine_structs.hpp"
 #include "SlateCore_structs.hpp"
-#include "E_SwordType_structs.hpp"
 
 
 SDK_NAMESPACE_START

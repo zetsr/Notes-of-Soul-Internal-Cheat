@@ -640,28 +640,6 @@ void ABP_Gs_JiangShi_C::Input_AttackPressed()
 }
 
 
-// Function BP_Gs_JiangShi.BP_Gs_JiangShi_C.SetBeStationary
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    IsBeStationary_0                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-// int32                                   Level                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_Gs_JiangShi_C::SetBeStationary(bool IsBeStationary_0, int32 Level)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Gs_JiangShi_C", "SetBeStationary");
-
-	Params::BP_Gs_JiangShi_C_SetBeStationary Parms{};
-
-	Parms.IsBeStationary_0 = IsBeStationary_0;
-	Parms.Level = Level;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
 // Function BP_Gs_JiangShi.BP_Gs_JiangShi_C.Virtual_KillSomeOne
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -682,17 +660,25 @@ void ABP_Gs_JiangShi_C::Virtual_KillSomeOne(class ABP_PlayerHuman_C* Human)
 }
 
 
-// Function BP_Gs_JiangShi.BP_Gs_JiangShi_C.Input_InteractPressed
+// Function BP_Gs_JiangShi.BP_Gs_JiangShi_C.SetBeStationary
 // (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    IsBeStationary_0                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// int32                                   Level                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_Gs_JiangShi_C::Input_InteractPressed()
+void ABP_Gs_JiangShi_C::SetBeStationary(bool IsBeStationary_0, int32 Level)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Gs_JiangShi_C", "Input_InteractPressed");
+		Func = Class->GetFunction("BP_Gs_JiangShi_C", "SetBeStationary");
 
-	UObject::ProcessEvent(Func, nullptr);
+	Params::BP_Gs_JiangShi_C_SetBeStationary Parms{};
+
+	Parms.IsBeStationary_0 = IsBeStationary_0;
+	Parms.Level = Level;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 
@@ -747,6 +733,20 @@ void ABP_Gs_JiangShi_C::AttackedOnePlayer(class ABP_PlayerHuman_C* Player, float
 	Parms.ForcePlayWhich = ForcePlayWhich;
 
 	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_Gs_JiangShi.BP_Gs_JiangShi_C.Input_InteractPressed
+// (BlueprintCallable, BlueprintEvent)
+
+void ABP_Gs_JiangShi_C::Input_InteractPressed()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_Gs_JiangShi_C", "Input_InteractPressed");
+
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 

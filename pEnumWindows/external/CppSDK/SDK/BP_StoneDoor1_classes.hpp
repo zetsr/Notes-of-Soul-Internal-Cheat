@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "Engine_structs.hpp"
 #include "BP_MoveDoorBase_classes.hpp"
+#include "Engine_structs.hpp"
 
 
 SDK_NAMESPACE_START
@@ -34,11 +34,11 @@ public:
 
 public:
 	void ExecuteUbergraph_BP_StoneDoor1(int32 EntryPoint);
+	void DominateThisDoor(float Delay, bool IsPositive);
+	void ReceiveBeginPlay();
 	void Timeline_6__UpdateFunc();
 	void Timeline_6__FinishedFunc();
 	void UserConstructionScript();
-	void DominateThisDoor(float Delay, bool IsPositive);
-	void ReceiveBeginPlay();
 	void OpenCloseDoor(bool IsPositive);
 
 public:

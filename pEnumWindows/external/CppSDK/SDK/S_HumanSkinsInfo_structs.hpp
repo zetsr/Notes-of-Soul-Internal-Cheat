@@ -11,8 +11,8 @@
 #include "Basic.hpp"
 
 #include "S_CharacterSkinMesh_structs.hpp"
-#include "S_DLCInfo_structs.hpp"
 #include "SCUE4_structs.hpp"
+#include "S_DLCInfo_structs.hpp"
 
 
 SDK_NAMESPACE_START

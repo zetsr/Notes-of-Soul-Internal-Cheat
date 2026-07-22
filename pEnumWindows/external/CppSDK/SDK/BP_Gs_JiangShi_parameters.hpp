@@ -11,9 +11,9 @@
 #include "Basic.hpp"
 
 #include "CoreUObject_structs.hpp"
+#include "S_SkillLevelData_structs.hpp"
 #include "Engine_structs.hpp"
 #include "S_HumanData_structs.hpp"
-#include "S_SkillLevelData_structs.hpp"
 #include "S_SkillEffectValue_structs.hpp"
 
 
@@ -880,6 +880,15 @@ public:
 };
 DUMPER7_ASSERTS_BP_Gs_JiangShi_C_Input_ChangeMoveForwardAxis;
 
+// Function BP_Gs_JiangShi.BP_Gs_JiangShi_C.Virtual_KillSomeOne
+// 0x0008 (0x0008 - 0x0000)
+struct BP_Gs_JiangShi_C_Virtual_KillSomeOne final
+{
+public:
+	class ABP_PlayerHuman_C*                      Human;                                             // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_Gs_JiangShi_C_Virtual_KillSomeOne;
+
 // Function BP_Gs_JiangShi.BP_Gs_JiangShi_C.SetBeStationary
 // 0x0008 (0x0008 - 0x0000)
 struct BP_Gs_JiangShi_C_SetBeStationary final
@@ -890,15 +899,6 @@ public:
 	int32                                         Level;                                             // 0x0004(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_BP_Gs_JiangShi_C_SetBeStationary;
-
-// Function BP_Gs_JiangShi.BP_Gs_JiangShi_C.Virtual_KillSomeOne
-// 0x0008 (0x0008 - 0x0000)
-struct BP_Gs_JiangShi_C_Virtual_KillSomeOne final
-{
-public:
-	class ABP_PlayerHuman_C*                      Human;                                             // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_Gs_JiangShi_C_Virtual_KillSomeOne;
 
 // Function BP_Gs_JiangShi.BP_Gs_JiangShi_C.AttackedOnePlayer
 // 0x0028 (0x0028 - 0x0000)

@@ -15,9 +15,9 @@
 #include "Engine_structs.hpp"
 #include "CoreUObject_structs.hpp"
 #include "LotteryBoxType_structs.hpp"
+#include "E_CharacterType_structs.hpp"
 #include "S_BoxChoose_structs.hpp"
 #include "SlateCore_structs.hpp"
-#include "E_CharacterType_structs.hpp"
 
 
 SDK_NAMESPACE_START

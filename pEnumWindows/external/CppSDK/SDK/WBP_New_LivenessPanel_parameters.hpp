@@ -10,9 +10,9 @@
 
 #include "Basic.hpp"
 
-#include "S_Task_structs.hpp"
 #include "S_LivenessAwardInfo_structs.hpp"
 #include "S_AwardInfo_structs.hpp"
+#include "S_Task_structs.hpp"
 #include "Engine_structs.hpp"
 #include "SlateCore_structs.hpp"
 

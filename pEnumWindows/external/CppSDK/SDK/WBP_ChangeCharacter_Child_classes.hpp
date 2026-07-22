@@ -11,8 +11,8 @@
 #include "Basic.hpp"
 
 #include "UMG_classes.hpp"
-#include "S_ChangeCharacter_structs.hpp"
 #include "Engine_structs.hpp"
+#include "S_ChangeCharacter_structs.hpp"
 #include "E_CharacterType_structs.hpp"
 
 

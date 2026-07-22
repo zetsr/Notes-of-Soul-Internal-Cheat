@@ -12,12 +12,12 @@
 
 #include "Engine_structs.hpp"
 #include "Engine_classes.hpp"
-#include "E_CharacterType_structs.hpp"
+#include "E_MissionName_structs.hpp"
 #include "E_AccessoryType_structs.hpp"
 #include "E_Clothes_structs.hpp"
 #include "SCUE4_structs.hpp"
 #include "E_CloudDataType_structs.hpp"
-#include "E_MissionName_structs.hpp"
+#include "E_CharacterType_structs.hpp"
 
 
 SDK_NAMESPACE_START

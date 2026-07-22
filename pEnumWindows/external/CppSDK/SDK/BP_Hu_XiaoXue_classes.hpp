@@ -39,10 +39,10 @@ public:
 	void FireSkillMainStar();
 	void Input_MainStarPressed();
 	void InitialConfigure();
-	void InitialConfigureValue();
 	void Virtual_StartSpeedUp(float Delay);
-	void Local_StartGame();
+	void InitialConfigureValue();
 	void ReceiveTick(float DeltaSeconds);
+	void Local_StartGame();
 	void ReceiveBeginPlay();
 	void UserConstructionScript();
 

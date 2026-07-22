@@ -12,8 +12,8 @@
 
 #include "CoreUObject_structs.hpp"
 #include "E_CloudDataType_structs.hpp"
-#include "SlateCore_structs.hpp"
 #include "S_ItemInfo_structs.hpp"
+#include "SlateCore_structs.hpp"
 #include "S_SkillLevelData_structs.hpp"
 #include "E_CharacterType_structs.hpp"
 

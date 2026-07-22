@@ -282,15 +282,6 @@ public:
 };
 DUMPER7_ASSERTS_BP_Gs_XiaoBai_C_BndEvt__BPC_PlayerInteract_K2Node_ComponentBoundEvent_1_OnProgressCompleted__DelegateSignature;
 
-// Function BP_Gs_XiaoBai.BP_Gs_XiaoBai_C.ReceiveTick
-// 0x0004 (0x0004 - 0x0000)
-struct BP_Gs_XiaoBai_C_ReceiveTick final
-{
-public:
-	float                                         DeltaSeconds;                                      // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_Gs_XiaoBai_C_ReceiveTick;
-
 // Function BP_Gs_XiaoBai.BP_Gs_XiaoBai_C.Multicast_DisappearZhaoHunFan
 // 0x0004 (0x0004 - 0x0000)
 struct BP_Gs_XiaoBai_C_Multicast_DisappearZhaoHunFan final
@@ -454,6 +445,15 @@ public:
 	float                                         CallFunc_FClamp_ReturnValue;                       // 0x0014(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_BP_Gs_XiaoBai_C_ReduceSkill1CD;
+
+// Function BP_Gs_XiaoBai.BP_Gs_XiaoBai_C.ReceiveTick
+// 0x0004 (0x0004 - 0x0000)
+struct BP_Gs_XiaoBai_C_ReceiveTick final
+{
+public:
+	float                                         DeltaSeconds;                                      // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_Gs_XiaoBai_C_ReceiveTick;
 
 // Function BP_Gs_XiaoBai.BP_Gs_XiaoBai_C.Input_LookRight
 // 0x0004 (0x0004 - 0x0000)

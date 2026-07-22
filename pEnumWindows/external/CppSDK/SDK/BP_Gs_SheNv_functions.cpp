@@ -708,26 +708,6 @@ void ABP_Gs_SheNv_C::Server_ChangeToXiaoShe()
 }
 
 
-// Function BP_Gs_SheNv.BP_Gs_SheNv_C.ReceiveTick
-// (Event, Public, BlueprintEvent)
-// Parameters:
-// float                                   DeltaSeconds                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_Gs_SheNv_C::ReceiveTick(float DeltaSeconds)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Gs_SheNv_C", "ReceiveTick");
-
-	Params::BP_Gs_SheNv_C_ReceiveTick Parms{};
-
-	Parms.DeltaSeconds = DeltaSeconds;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
 // Function BP_Gs_SheNv.BP_Gs_SheNv_C.时间轴_0__UpdateFunc
 // (BlueprintEvent)
 
@@ -1038,6 +1018,26 @@ void ABP_Gs_SheNv_C::CheckHumanCanBeHitBySkill2()
 }
 
 
+// Function BP_Gs_SheNv.BP_Gs_SheNv_C.ReceiveTick
+// (Event, Public, BlueprintEvent)
+// Parameters:
+// float                                   DeltaSeconds                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_Gs_SheNv_C::ReceiveTick(float DeltaSeconds)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_Gs_SheNv_C", "ReceiveTick");
+
+	Params::BP_Gs_SheNv_C_ReceiveTick Parms{};
+
+	Parms.DeltaSeconds = DeltaSeconds;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
 // Function BP_Gs_SheNv.BP_Gs_SheNv_C.Input_Skill1Released
 // (BlueprintCallable, BlueprintEvent)
 
@@ -1148,20 +1148,6 @@ void ABP_Gs_SheNv_C::Input_ChangeMoveForwardAxis(float Axis)
 }
 
 
-// Function BP_Gs_SheNv.BP_Gs_SheNv_C.Input_AttackPressed
-// (BlueprintCallable, BlueprintEvent)
-
-void ABP_Gs_SheNv_C::Input_AttackPressed()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Gs_SheNv_C", "Input_AttackPressed");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function BP_Gs_SheNv.BP_Gs_SheNv_C.Input_LookRight
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -1179,6 +1165,20 @@ void ABP_Gs_SheNv_C::Input_LookRight(float Axis)
 	Parms.Axis = Axis;
 
 	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_Gs_SheNv.BP_Gs_SheNv_C.Input_AttackPressed
+// (BlueprintCallable, BlueprintEvent)
+
+void ABP_Gs_SheNv_C::Input_AttackPressed()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_Gs_SheNv_C", "Input_AttackPressed");
+
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 
@@ -1244,20 +1244,6 @@ void ABP_Gs_SheNv_C::Input_TrapReleased()
 }
 
 
-// Function BP_Gs_SheNv.BP_Gs_SheNv_C.Local_StartGame
-// (BlueprintCallable, BlueprintEvent)
-
-void ABP_Gs_SheNv_C::Local_StartGame()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Gs_SheNv_C", "Local_StartGame");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function BP_Gs_SheNv.BP_Gs_SheNv_C.Input_TrapPressed
 // (BlueprintCallable, BlueprintEvent)
 
@@ -1281,6 +1267,20 @@ void ABP_Gs_SheNv_C::ReceiveBeginPlay()
 
 	if (Func == nullptr)
 		Func = Class->GetFunction("BP_Gs_SheNv_C", "ReceiveBeginPlay");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_Gs_SheNv.BP_Gs_SheNv_C.Local_StartGame
+// (BlueprintCallable, BlueprintEvent)
+
+void ABP_Gs_SheNv_C::Local_StartGame()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_Gs_SheNv_C", "Local_StartGame");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

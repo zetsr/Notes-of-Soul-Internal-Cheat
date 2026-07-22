@@ -62,10 +62,10 @@ public:
 	void Timeline_2__UpdateFunc();
 	void Timeline_2__FinishedFunc();
 	void Input_RunPressed();
-	void InitialConfigureValue();
 	void Virtual_StartSpeedUp(float Delay);
-	void Local_StartGame();
+	void InitialConfigureValue();
 	void ReceiveTick(float DeltaSeconds);
+	void Local_StartGame();
 	void ReceiveBeginPlay();
 	void UserConstructionScript();
 

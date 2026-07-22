@@ -78421,15 +78421,15 @@ float UDecalComponent::GetFadeStartDelay() const
 }
 
 
-// Function Engine.Light.OnRep_bEnabled
+// Function Engine.light.OnRep_bEnabled
 // (Native, Public)
 
-void ALight::OnRep_bEnabled()
+void Alight::OnRep_bEnabled()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("Light", "OnRep_bEnabled");
+		Func = Class->GetFunction("light", "OnRep_bEnabled");
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -78440,19 +78440,19 @@ void ALight::OnRep_bEnabled()
 }
 
 
-// Function Engine.Light.SetAffectTranslucentLighting
+// Function Engine.light.SetAffectTranslucentLighting
 // (Final, Native, Public, BlueprintCallable)
 // Parameters:
 // bool                                    bNewValue                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
-void ALight::SetAffectTranslucentLighting(bool bNewValue)
+void Alight::SetAffectTranslucentLighting(bool bNewValue)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("Light", "SetAffectTranslucentLighting");
+		Func = Class->GetFunction("light", "SetAffectTranslucentLighting");
 
-	Params::Light_SetAffectTranslucentLighting Parms{};
+	Params::light_SetAffectTranslucentLighting Parms{};
 
 	Parms.bNewValue = bNewValue;
 
@@ -78465,19 +78465,19 @@ void ALight::SetAffectTranslucentLighting(bool bNewValue)
 }
 
 
-// Function Engine.Light.SetBrightness
+// Function Engine.light.SetBrightness
 // (Final, Native, Public, BlueprintCallable)
 // Parameters:
 // float                                   NewBrightness                                          (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
-void ALight::SetBrightness(float NewBrightness)
+void Alight::SetBrightness(float NewBrightness)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("Light", "SetBrightness");
+		Func = Class->GetFunction("light", "SetBrightness");
 
-	Params::Light_SetBrightness Parms{};
+	Params::light_SetBrightness Parms{};
 
 	Parms.NewBrightness = NewBrightness;
 
@@ -78490,19 +78490,19 @@ void ALight::SetBrightness(float NewBrightness)
 }
 
 
-// Function Engine.Light.SetCastShadows
+// Function Engine.light.SetCastShadows
 // (Final, Native, Public, BlueprintCallable)
 // Parameters:
 // bool                                    bNewValue                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
-void ALight::SetCastShadows(bool bNewValue)
+void Alight::SetCastShadows(bool bNewValue)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("Light", "SetCastShadows");
+		Func = Class->GetFunction("light", "SetCastShadows");
 
-	Params::Light_SetCastShadows Parms{};
+	Params::light_SetCastShadows Parms{};
 
 	Parms.bNewValue = bNewValue;
 
@@ -78515,19 +78515,19 @@ void ALight::SetCastShadows(bool bNewValue)
 }
 
 
-// Function Engine.Light.SetEnabled
+// Function Engine.light.SetEnabled
 // (Final, Native, Public, BlueprintCallable)
 // Parameters:
 // bool                                    bSetEnabled                                            (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
-void ALight::SetEnabled(bool bSetEnabled)
+void Alight::SetEnabled(bool bSetEnabled)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("Light", "SetEnabled");
+		Func = Class->GetFunction("light", "SetEnabled");
 
-	Params::Light_SetEnabled Parms{};
+	Params::light_SetEnabled Parms{};
 
 	Parms.bSetEnabled = bSetEnabled;
 
@@ -78540,19 +78540,19 @@ void ALight::SetEnabled(bool bSetEnabled)
 }
 
 
-// Function Engine.Light.SetLightColor
+// Function Engine.light.SetLightColor
 // (Final, Native, Public, HasDefaults, BlueprintCallable)
 // Parameters:
 // const struct FLinearColor&              NewLightColor                                          (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
-void ALight::SetLightColor(const struct FLinearColor& NewLightColor)
+void Alight::SetLightColor(const struct FLinearColor& NewLightColor)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("Light", "SetLightColor");
+		Func = Class->GetFunction("light", "SetLightColor");
 
-	Params::Light_SetLightColor Parms{};
+	Params::light_SetLightColor Parms{};
 
 	Parms.NewLightColor = std::move(NewLightColor);
 
@@ -78565,19 +78565,19 @@ void ALight::SetLightColor(const struct FLinearColor& NewLightColor)
 }
 
 
-// Function Engine.Light.SetLightFunctionFadeDistance
+// Function Engine.light.SetLightFunctionFadeDistance
 // (Final, Native, Public, BlueprintCallable)
 // Parameters:
 // float                                   NewLightFunctionFadeDistance                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
-void ALight::SetLightFunctionFadeDistance(float NewLightFunctionFadeDistance)
+void Alight::SetLightFunctionFadeDistance(float NewLightFunctionFadeDistance)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("Light", "SetLightFunctionFadeDistance");
+		Func = Class->GetFunction("light", "SetLightFunctionFadeDistance");
 
-	Params::Light_SetLightFunctionFadeDistance Parms{};
+	Params::light_SetLightFunctionFadeDistance Parms{};
 
 	Parms.NewLightFunctionFadeDistance = NewLightFunctionFadeDistance;
 
@@ -78590,19 +78590,19 @@ void ALight::SetLightFunctionFadeDistance(float NewLightFunctionFadeDistance)
 }
 
 
-// Function Engine.Light.SetLightFunctionMaterial
+// Function Engine.light.SetLightFunctionMaterial
 // (Final, Native, Public, BlueprintCallable)
 // Parameters:
 // class UMaterialInterface*               NewLightFunctionMaterial                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
-void ALight::SetLightFunctionMaterial(class UMaterialInterface* NewLightFunctionMaterial)
+void Alight::SetLightFunctionMaterial(class UMaterialInterface* NewLightFunctionMaterial)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("Light", "SetLightFunctionMaterial");
+		Func = Class->GetFunction("light", "SetLightFunctionMaterial");
 
-	Params::Light_SetLightFunctionMaterial Parms{};
+	Params::light_SetLightFunctionMaterial Parms{};
 
 	Parms.NewLightFunctionMaterial = NewLightFunctionMaterial;
 
@@ -78615,19 +78615,19 @@ void ALight::SetLightFunctionMaterial(class UMaterialInterface* NewLightFunction
 }
 
 
-// Function Engine.Light.SetLightFunctionScale
+// Function Engine.light.SetLightFunctionScale
 // (Final, Native, Public, HasDefaults, BlueprintCallable)
 // Parameters:
 // const struct FVector&                   NewLightFunctionScale                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
-void ALight::SetLightFunctionScale(const struct FVector& NewLightFunctionScale)
+void Alight::SetLightFunctionScale(const struct FVector& NewLightFunctionScale)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("Light", "SetLightFunctionScale");
+		Func = Class->GetFunction("light", "SetLightFunctionScale");
 
-	Params::Light_SetLightFunctionScale Parms{};
+	Params::light_SetLightFunctionScale Parms{};
 
 	Parms.NewLightFunctionScale = std::move(NewLightFunctionScale);
 
@@ -78640,15 +78640,15 @@ void ALight::SetLightFunctionScale(const struct FVector& NewLightFunctionScale)
 }
 
 
-// Function Engine.Light.ToggleEnabled
+// Function Engine.light.ToggleEnabled
 // (Final, Native, Public, BlueprintCallable)
 
-void ALight::ToggleEnabled()
+void Alight::ToggleEnabled()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("Light", "ToggleEnabled");
+		Func = Class->GetFunction("light", "ToggleEnabled");
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -78659,19 +78659,19 @@ void ALight::ToggleEnabled()
 }
 
 
-// Function Engine.Light.GetBrightness
+// Function Engine.light.GetBrightness
 // (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 // Parameters:
 // float                                   ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
-float ALight::GetBrightness() const
+float Alight::GetBrightness() const
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("Light", "GetBrightness");
+		Func = Class->GetFunction("light", "GetBrightness");
 
-	Params::Light_GetBrightness Parms{};
+	Params::light_GetBrightness Parms{};
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -78684,19 +78684,19 @@ float ALight::GetBrightness() const
 }
 
 
-// Function Engine.Light.GetLightColor
+// Function Engine.light.GetLightColor
 // (Final, Native, Public, HasDefaults, BlueprintCallable, BlueprintPure, Const)
 // Parameters:
 // struct FLinearColor                     ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
-struct FLinearColor ALight::GetLightColor() const
+struct FLinearColor Alight::GetLightColor() const
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("Light", "GetLightColor");
+		Func = Class->GetFunction("light", "GetLightColor");
 
-	Params::Light_GetLightColor Parms{};
+	Params::light_GetLightColor Parms{};
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -78709,19 +78709,19 @@ struct FLinearColor ALight::GetLightColor() const
 }
 
 
-// Function Engine.Light.IsEnabled
+// Function Engine.light.IsEnabled
 // (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 // Parameters:
 // bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
-bool ALight::IsEnabled() const
+bool Alight::IsEnabled() const
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("Light", "IsEnabled");
+		Func = Class->GetFunction("light", "IsEnabled");
 
-	Params::Light_IsEnabled Parms{};
+	Params::light_IsEnabled Parms{};
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;

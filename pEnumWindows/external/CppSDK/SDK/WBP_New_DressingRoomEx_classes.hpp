@@ -13,11 +13,11 @@
 #include "UMG_classes.hpp"
 #include "E_CharacterCampType_structs.hpp"
 #include "Engine_structs.hpp"
-#include "SlateCore_structs.hpp"
-#include "E_AccessoryType_structs.hpp"
-#include "E_CharacterType_structs.hpp"
 #include "CoreUObject_structs.hpp"
 #include "E_GameOverAnimation_structs.hpp"
+#include "E_CharacterType_structs.hpp"
+#include "SlateCore_structs.hpp"
+#include "E_AccessoryType_structs.hpp"
 #include "AbleCore_structs.hpp"
 #include "E_CharacterAnimationType_structs.hpp"
 #include "E_Clothes_structs.hpp"
@@ -92,7 +92,7 @@ public:
 	class UScrollBox*                             SkinScrollBox;                                     // 0x0430(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UWidgetSwitcher*                        Switcher_Cut;                                      // 0x0438(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UTextBlock*                             TextTitle;                                         // 0x0440(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UButton*                                TouShi;                                            // 0x0448(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UButton*                                toushi;                                            // 0x0448(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UWBP_PlayerModel_C*                     WBP_PlayerModel;                                   // 0x0450(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UCanvasPanel*                           WeaponPanel;                                       // 0x0458(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UScrollBox*                             WeaponScrollBox;                                   // 0x0460(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
@@ -292,7 +292,7 @@ public:
 	void FlushTitle();
 	void SetCurrentTitle(class FName Title, class FName* _Title);
 	void SpawnRecordingActor();
-	void SetCurrentWeapon(class FName Weapon);
+	void SetCurrentWeapon(class FName weapon);
 	void AddFlashLightItem(class FName FlashLightType, bool IsTrial);
 	void FlushFlashLight();
 	void AddHeadItem(class FName Type, bool IsTrial);

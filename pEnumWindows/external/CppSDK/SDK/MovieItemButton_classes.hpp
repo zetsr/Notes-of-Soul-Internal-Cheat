@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "ThumbnailBorderButton_classes.hpp"
 #include "E_GameOverAnimation_structs.hpp"
+#include "ThumbnailBorderButton_classes.hpp"
 
 
 SDK_NAMESPACE_START

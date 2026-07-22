@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "S_AllowChangeConfig_structs.hpp"
 #include "CoreUObject_structs.hpp"
+#include "S_AllowChangeConfig_structs.hpp"
 #include "ProceduralMeshComponent_structs.hpp"
 #include "Engine_structs.hpp"
 
@@ -227,6 +227,19 @@ public:
 };
 DUMPER7_ASSERTS_BP_Hu_xiaobao_C_Server_TreatmentPlayer;
 
+// Function BP_Hu_xiaobao.BP_Hu_xiaobao_C.OnHealthLocked
+// 0x0028 (0x0028 - 0x0000)
+struct BP_Hu_xiaobao_C_OnHealthLocked final
+{
+public:
+	class FString                                 Name_0;                                            // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
+	float                                         CustomData;                                        // 0x0010(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_14[0x4];                                       // 0x0014(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class APawn*                                  PawnInstigator;                                    // 0x0018(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AController*                            Suffer;                                            // 0x0020(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_Hu_xiaobao_C_OnHealthLocked;
+
 // Function BP_Hu_xiaobao.BP_Hu_xiaobao_C.OnTakeDamage
 // 0x0030 (0x0030 - 0x0000)
 struct BP_Hu_xiaobao_C_OnTakeDamage final
@@ -241,19 +254,6 @@ public:
 	class AActor*                                 DamageCauser;                                      // 0x0028(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_BP_Hu_xiaobao_C_OnTakeDamage;
-
-// Function BP_Hu_xiaobao.BP_Hu_xiaobao_C.OnHealthLocked
-// 0x0028 (0x0028 - 0x0000)
-struct BP_Hu_xiaobao_C_OnHealthLocked final
-{
-public:
-	class FString                                 Name_0;                                            // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
-	float                                         CustomData;                                        // 0x0010(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_14[0x4];                                       // 0x0014(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class APawn*                                  PawnInstigator;                                    // 0x0018(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AController*                            Suffer;                                            // 0x0020(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_Hu_xiaobao_C_OnHealthLocked;
 
 // Function BP_Hu_xiaobao.BP_Hu_xiaobao_C.UserConstructionScript
 // 0x0004 (0x0004 - 0x0000)

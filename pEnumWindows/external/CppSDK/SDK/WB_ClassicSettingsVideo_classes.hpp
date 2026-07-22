@@ -11,8 +11,8 @@
 #include "Basic.hpp"
 
 #include "UMG_classes.hpp"
-#include "SVideoResolution_structs.hpp"
 #include "Engine_structs.hpp"
+#include "SVideoResolution_structs.hpp"
 #include "SlateCore_structs.hpp"
 
 

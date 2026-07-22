@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "E_AccessoryType_structs.hpp"
 #include "ThumbnailBorderButton_classes.hpp"
+#include "E_AccessoryType_structs.hpp"
 
 
 SDK_NAMESPACE_START

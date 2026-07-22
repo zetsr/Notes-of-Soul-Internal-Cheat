@@ -10,15 +10,15 @@
 
 #include "Basic.hpp"
 
+#include "E_TipType_structs.hpp"
 #include "Engine_structs.hpp"
 #include "Engine_classes.hpp"
 #include "E_CharacterCampType_structs.hpp"
-#include "E_CommodityType_structs.hpp"
-#include "E_CharacterType_structs.hpp"
-#include "E_CharacterAnimationType_structs.hpp"
 #include "Enu_InitInterfaceType_structs.hpp"
+#include "E_CharacterAnimationType_structs.hpp"
+#include "E_CharacterType_structs.hpp"
 #include "Enu_Submark_structs.hpp"
-#include "E_TipType_structs.hpp"
+#include "E_CommodityType_structs.hpp"
 #include "Enu_BlinkItem_structs.hpp"
 
 

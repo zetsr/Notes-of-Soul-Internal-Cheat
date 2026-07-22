@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "E_CommodityType_structs.hpp"
 #include "SCUE4_structs.hpp"
+#include "E_CommodityType_structs.hpp"
 
 
 SDK_NAMESPACE_START

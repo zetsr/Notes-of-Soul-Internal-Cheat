@@ -52,8 +52,8 @@ public:
 	void Input_MainStarPressed();
 	void Move__UpdateFunc();
 	void Move__FinishedFunc();
-	void InitialConfigureValue();
 	void Virtual_StartSpeedUp(float Delay);
+	void InitialConfigureValue();
 	void Local_StartGame();
 	void ReceiveBeginPlay();
 	void UserConstructionScript();

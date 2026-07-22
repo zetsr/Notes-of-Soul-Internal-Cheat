@@ -29,8 +29,8 @@ public:
 public:
 	void ExecuteUbergraph_BP_Hu_XiaoFang(int32 EntryPoint);
 	void InitialConfigure();
-	void InitialConfigureValue();
 	void Virtual_StartSpeedUp(float Delay);
+	void InitialConfigureValue();
 	void ReceiveTick(float DeltaSeconds);
 	void ReceiveBeginPlay();
 	void UserConstructionScript();

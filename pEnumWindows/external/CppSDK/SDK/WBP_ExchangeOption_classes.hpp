@@ -10,10 +10,10 @@
 
 #include "Basic.hpp"
 
-#include "E_CommodityType_structs.hpp"
 #include "UMG_classes.hpp"
 #include "Engine_structs.hpp"
 #include "SlateCore_structs.hpp"
+#include "E_CommodityType_structs.hpp"
 #include "SCUE4_structs.hpp"
 #include "Str_HolidayExchangeItem_structs.hpp"
 

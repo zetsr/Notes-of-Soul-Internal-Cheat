@@ -10,14 +10,14 @@
 
 #include "Basic.hpp"
 
-#include "SlateCore_structs.hpp"
 #include "E_SwordType_structs.hpp"
 #include "S_SwordType_structs.hpp"
+#include "S_ItemPickUp_structs.hpp"
 #include "E_CloudDataType_structs.hpp"
 #include "S_ItemDBInfo_structs.hpp"
-#include "SCUE4_structs.hpp"
 #include "S_ItemInfo_structs.hpp"
-#include "S_ItemPickUp_structs.hpp"
+#include "SlateCore_structs.hpp"
+#include "SCUE4_structs.hpp"
 #include "S_CloudData_structs.hpp"
 #include "Engine_structs.hpp"
 

@@ -392,6 +392,20 @@ void ABP_Hu_xiaobao_C::StartDoingSomething(float Delay, const class FString& Nam
 }
 
 
+// Function BP_Hu_xiaobao.BP_Hu_xiaobao_C.Input_AttackPressed
+// (BlueprintCallable, BlueprintEvent)
+
+void ABP_Hu_xiaobao_C::Input_AttackPressed()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_Hu_xiaobao_C", "Input_AttackPressed");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // Function BP_Hu_xiaobao.BP_Hu_xiaobao_C.Server_TreatmentPlayer
 // (Net, NetReliable, NetServer, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -425,48 +439,6 @@ void ABP_Hu_xiaobao_C::Local_StartGame()
 		Func = Class->GetFunction("BP_Hu_xiaobao_C", "Local_StartGame");
 
 	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_Hu_xiaobao.BP_Hu_xiaobao_C.Input_AttackPressed
-// (BlueprintCallable, BlueprintEvent)
-
-void ABP_Hu_xiaobao_C::Input_AttackPressed()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Hu_xiaobao_C", "Input_AttackPressed");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_Hu_xiaobao.BP_Hu_xiaobao_C.OnTakeDamage
-// (BlueprintAuthorityOnly, Event, Public, BlueprintEvent)
-// Parameters:
-// float                                   Damage                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// const class FString&                    Name_0                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
-// float                                   CustomData                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class AController*                      EventInstigator                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class AActor*                           DamageCauser                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_Hu_xiaobao_C::OnTakeDamage(float Damage, const class FString& Name_0, float CustomData, class AController* EventInstigator, class AActor* DamageCauser)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Hu_xiaobao_C", "OnTakeDamage");
-
-	Params::BP_Hu_xiaobao_C_OnTakeDamage Parms{};
-
-	Parms.Damage = Damage;
-	Parms.Name_0 = std::move(Name_0);
-	Parms.CustomData = CustomData;
-	Parms.EventInstigator = EventInstigator;
-	Parms.DamageCauser = DamageCauser;
-
-	UObject::ProcessEvent(Func, &Parms);
 }
 
 
@@ -505,6 +477,34 @@ void ABP_Hu_xiaobao_C::OnHealthLocked(const class FString& Name_0, float CustomD
 	Parms.CustomData = CustomData;
 	Parms.PawnInstigator = PawnInstigator;
 	Parms.Suffer = Suffer;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_Hu_xiaobao.BP_Hu_xiaobao_C.OnTakeDamage
+// (BlueprintAuthorityOnly, Event, Public, BlueprintEvent)
+// Parameters:
+// float                                   Damage                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const class FString&                    Name_0                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
+// float                                   CustomData                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class AController*                      EventInstigator                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class AActor*                           DamageCauser                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_Hu_xiaobao_C::OnTakeDamage(float Damage, const class FString& Name_0, float CustomData, class AController* EventInstigator, class AActor* DamageCauser)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_Hu_xiaobao_C", "OnTakeDamage");
+
+	Params::BP_Hu_xiaobao_C_OnTakeDamage Parms{};
+
+	Parms.Damage = Damage;
+	Parms.Name_0 = std::move(Name_0);
+	Parms.CustomData = CustomData;
+	Parms.EventInstigator = EventInstigator;
+	Parms.DamageCauser = DamageCauser;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

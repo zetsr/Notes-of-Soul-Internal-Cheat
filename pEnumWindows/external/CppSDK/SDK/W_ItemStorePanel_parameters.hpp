@@ -11,8 +11,8 @@
 #include "Basic.hpp"
 
 #include "E_CloudDataType_structs.hpp"
-#include "S_ItemInfo_structs.hpp"
 #include "Engine_structs.hpp"
+#include "S_ItemInfo_structs.hpp"
 
 
 SDK_NAMESPACE_START

@@ -12,8 +12,8 @@
 
 #include "UMG_classes.hpp"
 #include "Engine_structs.hpp"
-#include "SlateCore_structs.hpp"
 #include "E_CharacterType_structs.hpp"
+#include "SlateCore_structs.hpp"
 
 
 SDK_NAMESPACE_START

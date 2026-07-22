@@ -98,20 +98,6 @@ void ABP_Hu_XiaoXue_C::InitialConfigure()
 }
 
 
-// Function BP_Hu_XiaoXue.BP_Hu_XiaoXue_C.InitialConfigureValue
-// (BlueprintCallable, BlueprintEvent)
-
-void ABP_Hu_XiaoXue_C::InitialConfigureValue()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Hu_XiaoXue_C", "InitialConfigureValue");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function BP_Hu_XiaoXue.BP_Hu_XiaoXue_C.Virtual_StartSpeedUp
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -132,15 +118,15 @@ void ABP_Hu_XiaoXue_C::Virtual_StartSpeedUp(float Delay)
 }
 
 
-// Function BP_Hu_XiaoXue.BP_Hu_XiaoXue_C.Local_StartGame
+// Function BP_Hu_XiaoXue.BP_Hu_XiaoXue_C.InitialConfigureValue
 // (BlueprintCallable, BlueprintEvent)
 
-void ABP_Hu_XiaoXue_C::Local_StartGame()
+void ABP_Hu_XiaoXue_C::InitialConfigureValue()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Hu_XiaoXue_C", "Local_StartGame");
+		Func = Class->GetFunction("BP_Hu_XiaoXue_C", "InitialConfigureValue");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -163,6 +149,20 @@ void ABP_Hu_XiaoXue_C::ReceiveTick(float DeltaSeconds)
 	Parms.DeltaSeconds = DeltaSeconds;
 
 	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_Hu_XiaoXue.BP_Hu_XiaoXue_C.Local_StartGame
+// (BlueprintCallable, BlueprintEvent)
+
+void ABP_Hu_XiaoXue_C::Local_StartGame()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_Hu_XiaoXue_C", "Local_StartGame");
+
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 

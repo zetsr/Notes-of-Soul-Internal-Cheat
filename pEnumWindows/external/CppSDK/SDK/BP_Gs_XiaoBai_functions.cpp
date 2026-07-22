@@ -98,26 +98,6 @@ void ABP_Gs_XiaoBai_C::BndEvt__BPC_PlayerInteract_K2Node_ComponentBoundEvent_1_O
 }
 
 
-// Function BP_Gs_XiaoBai.BP_Gs_XiaoBai_C.ReceiveTick
-// (Event, Public, BlueprintEvent)
-// Parameters:
-// float                                   DeltaSeconds                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_Gs_XiaoBai_C::ReceiveTick(float DeltaSeconds)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Gs_XiaoBai_C", "ReceiveTick");
-
-	Params::BP_Gs_XiaoBai_C_ReceiveTick Parms{};
-
-	Parms.DeltaSeconds = DeltaSeconds;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
 // Function BP_Gs_XiaoBai.BP_Gs_XiaoBai_C.Multicast_DisappearZhaoHunFan
 // (Net, NetReliable, NetMulticast, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -379,6 +359,26 @@ void ABP_Gs_XiaoBai_C::ReduceSkill1CD()
 }
 
 
+// Function BP_Gs_XiaoBai.BP_Gs_XiaoBai_C.ReceiveTick
+// (Event, Public, BlueprintEvent)
+// Parameters:
+// float                                   DeltaSeconds                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_Gs_XiaoBai_C::ReceiveTick(float DeltaSeconds)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_Gs_XiaoBai_C", "ReceiveTick");
+
+	Params::BP_Gs_XiaoBai_C_ReceiveTick Parms{};
+
+	Parms.DeltaSeconds = DeltaSeconds;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
 // Function BP_Gs_XiaoBai.BP_Gs_XiaoBai_C.Input_Skill3Pressed
 // (BlueprintCallable, BlueprintEvent)
 
@@ -421,20 +421,6 @@ void ABP_Gs_XiaoBai_C::Input_Skill1Pressed()
 }
 
 
-// Function BP_Gs_XiaoBai.BP_Gs_XiaoBai_C.Input_AttackPressed
-// (BlueprintCallable, BlueprintEvent)
-
-void ABP_Gs_XiaoBai_C::Input_AttackPressed()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Gs_XiaoBai_C", "Input_AttackPressed");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function BP_Gs_XiaoBai.BP_Gs_XiaoBai_C.Input_LookRight
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -452,6 +438,20 @@ void ABP_Gs_XiaoBai_C::Input_LookRight(float Axis)
 	Parms.Axis = Axis;
 
 	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_Gs_XiaoBai.BP_Gs_XiaoBai_C.Input_AttackPressed
+// (BlueprintCallable, BlueprintEvent)
+
+void ABP_Gs_XiaoBai_C::Input_AttackPressed()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_Gs_XiaoBai_C", "Input_AttackPressed");
+
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 

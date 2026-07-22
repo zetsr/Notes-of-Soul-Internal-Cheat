@@ -11,9 +11,9 @@
 #include "Basic.hpp"
 
 #include "CoreUObject_structs.hpp"
-#include "E_CharacterType_structs.hpp"
 #include "E_CharacterCampType_structs.hpp"
 #include "Engine_structs.hpp"
+#include "E_CharacterType_structs.hpp"
 
 
 SDK_NAMESPACE_START

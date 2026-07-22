@@ -10,10 +10,10 @@
 
 #include "Basic.hpp"
 
-#include "E_PickupType_structs.hpp"
 #include "CoreUObject_structs.hpp"
-#include "S_PickupData_structs.hpp"
 #include "Engine_structs.hpp"
+#include "E_PickupType_structs.hpp"
+#include "S_PickupData_structs.hpp"
 
 
 SDK_NAMESPACE_START

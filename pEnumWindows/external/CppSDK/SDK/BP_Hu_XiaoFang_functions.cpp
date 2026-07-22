@@ -50,20 +50,6 @@ void ABP_Hu_XiaoFang_C::InitialConfigure()
 }
 
 
-// Function BP_Hu_XiaoFang.BP_Hu_XiaoFang_C.InitialConfigureValue
-// (BlueprintCallable, BlueprintEvent)
-
-void ABP_Hu_XiaoFang_C::InitialConfigureValue()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Hu_XiaoFang_C", "InitialConfigureValue");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function BP_Hu_XiaoFang.BP_Hu_XiaoFang_C.Virtual_StartSpeedUp
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -81,6 +67,20 @@ void ABP_Hu_XiaoFang_C::Virtual_StartSpeedUp(float Delay)
 	Parms.Delay = Delay;
 
 	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_Hu_XiaoFang.BP_Hu_XiaoFang_C.InitialConfigureValue
+// (BlueprintCallable, BlueprintEvent)
+
+void ABP_Hu_XiaoFang_C::InitialConfigureValue()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_Hu_XiaoFang_C", "InitialConfigureValue");
+
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 

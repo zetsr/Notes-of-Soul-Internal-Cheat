@@ -11,12 +11,12 @@
 #include "Basic.hpp"
 
 #include "Engine_classes.hpp"
+#include "E_MoneyType_structs.hpp"
+#include "E_AccessoryType_structs.hpp"
+#include "E_Clothes_structs.hpp"
 #include "E_ActionType_structs.hpp"
 #include "Enu_Submark_structs.hpp"
-#include "E_Clothes_structs.hpp"
 #include "E_FlashLightType_structs.hpp"
-#include "E_AccessoryType_structs.hpp"
-#include "E_MoneyType_structs.hpp"
 
 
 SDK_NAMESPACE_START

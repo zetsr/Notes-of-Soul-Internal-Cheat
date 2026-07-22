@@ -56,6 +56,40 @@ void ABP_Elevator_frame_C::ChangeCurrentFloor(class UMaterialInstance* FloorMate
 }
 
 
+// Function BP_Elevator_frame.BP_Elevator_frame_C.ReceiveBeginPlay
+// (Event, Protected, BlueprintEvent)
+
+void ABP_Elevator_frame_C::ReceiveBeginPlay()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_Elevator_frame_C", "ReceiveBeginPlay");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_Elevator_frame.BP_Elevator_frame_C.OpenCloseDoor
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    IsPositive                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+
+void ABP_Elevator_frame_C::OpenCloseDoor(bool IsPositive)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_Elevator_frame_C", "OpenCloseDoor");
+
+	Params::BP_Elevator_frame_C_OpenCloseDoor Parms{};
+
+	Parms.IsPositive = IsPositive;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
 // Function BP_Elevator_frame.BP_Elevator_frame_C.OpenDoor__UpdateFunc
 // (BlueprintEvent)
 
@@ -95,40 +129,6 @@ void ABP_Elevator_frame_C::UserConstructionScript()
 		Func = Class->GetFunction("BP_Elevator_frame_C", "UserConstructionScript");
 
 	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_Elevator_frame.BP_Elevator_frame_C.ReceiveBeginPlay
-// (Event, Protected, BlueprintEvent)
-
-void ABP_Elevator_frame_C::ReceiveBeginPlay()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Elevator_frame_C", "ReceiveBeginPlay");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_Elevator_frame.BP_Elevator_frame_C.OpenCloseDoor
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    IsPositive                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void ABP_Elevator_frame_C::OpenCloseDoor(bool IsPositive)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Elevator_frame_C", "OpenCloseDoor");
-
-	Params::BP_Elevator_frame_C_OpenCloseDoor Parms{};
-
-	Parms.IsPositive = IsPositive;
-
-	UObject::ProcessEvent(Func, &Parms);
 }
 
 

@@ -10,14 +10,14 @@
 
 #include "Basic.hpp"
 
-#include "E_IgnoreKeyResponse_structs.hpp"
 #include "Engine_structs.hpp"
 #include "E_CharacterCampType_structs.hpp"
 #include "KxFramework_classes.hpp"
+#include "E_CharacterType_structs.hpp"
 #include "CoreUObject_structs.hpp"
 #include "SCUE4_structs.hpp"
+#include "E_IgnoreKeyResponse_structs.hpp"
 #include "E_MoveSpeedState_structs.hpp"
-#include "E_CharacterType_structs.hpp"
 #include "E_GameMode_structs.hpp"
 #include "E_MaCheState_structs.hpp"
 

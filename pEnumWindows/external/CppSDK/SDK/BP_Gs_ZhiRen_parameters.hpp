@@ -11,9 +11,9 @@
 #include "Basic.hpp"
 
 #include "CoreUObject_structs.hpp"
-#include "S_GhostSkinAbout_structs.hpp"
 #include "InputCore_structs.hpp"
 #include "Engine_structs.hpp"
+#include "S_GhostSkinAbout_structs.hpp"
 
 
 SDK_NAMESPACE_START
@@ -639,15 +639,6 @@ public:
 };
 DUMPER7_ASSERTS_BP_Gs_ZhiRen_C_Server_SpawnZhiRenNoMoveOnLoc;
 
-// Function BP_Gs_ZhiRen.BP_Gs_ZhiRen_C.ReceiveTick
-// 0x0004 (0x0004 - 0x0000)
-struct BP_Gs_ZhiRen_C_ReceiveTick final
-{
-public:
-	float                                         DeltaSeconds;                                      // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_Gs_ZhiRen_C_ReceiveTick;
-
 // Function BP_Gs_ZhiRen.BP_Gs_ZhiRen_C.InpActEvt_V_K2Node_InputKeyEvent_0
 // 0x0018 (0x0018 - 0x0000)
 struct BP_Gs_ZhiRen_C_InpActEvt_V_K2Node_InputKeyEvent_0 final
@@ -824,6 +815,15 @@ public:
 	float                                         CallFunc_Divide_FloatFloat_ReturnValue;            // 0x0004(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_BP_Gs_ZhiRen_C_RefreshSkill2CD;
+
+// Function BP_Gs_ZhiRen.BP_Gs_ZhiRen_C.ReceiveTick
+// 0x0004 (0x0004 - 0x0000)
+struct BP_Gs_ZhiRen_C_ReceiveTick final
+{
+public:
+	float                                         DeltaSeconds;                                      // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_Gs_ZhiRen_C_ReceiveTick;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

@@ -11,13 +11,13 @@
 #include "Basic.hpp"
 
 #include "E_CharacterCampType_structs.hpp"
-#include "E_CommodityType_structs.hpp"
 #include "Engine_classes.hpp"
+#include "E_CharacterAnimationType_structs.hpp"
 #include "E_CharacterType_structs.hpp"
 #include "E_StorageMode_structs.hpp"
-#include "LowEntryExtendedStandardLibrary_structs.hpp"
 #include "E_MoneyType_structs.hpp"
-#include "E_CharacterAnimationType_structs.hpp"
+#include "LowEntryExtendedStandardLibrary_structs.hpp"
+#include "E_CommodityType_structs.hpp"
 
 
 SDK_NAMESPACE_START

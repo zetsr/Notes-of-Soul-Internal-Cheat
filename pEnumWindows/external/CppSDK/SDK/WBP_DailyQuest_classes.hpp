@@ -11,9 +11,9 @@
 #include "Basic.hpp"
 
 #include "E_CharacterCampType_structs.hpp"
+#include "E_QuestType_structs.hpp"
 #include "UMG_classes.hpp"
 #include "Engine_structs.hpp"
-#include "E_QuestType_structs.hpp"
 #include "SlateCore_structs.hpp"
 #include "E_MissionName_structs.hpp"
 

@@ -38,8 +38,8 @@ public:
 	void InitialConfigure();
 	void Virtual_StartSpeedUp(float Delay);
 	void InitialConfigureValue();
-	void Local_StartGame();
 	void ReceiveTick(float DeltaSeconds);
+	void Local_StartGame();
 	void ReceiveBeginPlay();
 	void UserConstructionScript();
 

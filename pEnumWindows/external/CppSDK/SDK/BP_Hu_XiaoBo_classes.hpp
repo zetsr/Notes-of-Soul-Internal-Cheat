@@ -36,8 +36,8 @@ public:
 	void InitialConfigure();
 	void Input_MainStarReleased();
 	void FireSkill1();
-	void InitialConfigureValue();
 	void Virtual_StartSpeedUp(float Delay);
+	void InitialConfigureValue();
 	void Local_StartGame();
 	void ReceiveBeginPlay();
 	void UserConstructionScript();

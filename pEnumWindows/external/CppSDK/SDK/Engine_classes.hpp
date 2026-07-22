@@ -17392,9 +17392,9 @@ public:
 };
 DUMPER7_ASSERTS_UDialogueWave;
 
-// Class Engine.Light
+// Class Engine.light
 // 0x0010 (0x0230 - 0x0220)
-class ALight : public AActor
+class Alight : public AActor
 {
 public:
 	class ULightComponent*                        LightComponent;                                    // 0x0220(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
@@ -17420,22 +17420,22 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		STATIC_CLASS_IMPL("Light")
+		STATIC_CLASS_IMPL("light")
 	}
 	static const class FName& StaticName()
 	{
-		STATIC_NAME_IMPL(L"Light")
+		STATIC_NAME_IMPL(L"light")
 	}
-	static class ALight* GetDefaultObj()
+	static class Alight* GetDefaultObj()
 	{
-		return GetDefaultObjImpl<ALight>();
+		return GetDefaultObjImpl<Alight>();
 	}
 };
-DUMPER7_ASSERTS_ALight;
+DUMPER7_ASSERTS_Alight;
 
 // Class Engine.DirectionalLight
 // 0x0000 (0x0230 - 0x0230)
-class ADirectionalLight final : public ALight
+class ADirectionalLight final : public Alight
 {
 public:
 	static class UClass* StaticClass()
@@ -18196,7 +18196,7 @@ DUMPER7_ASSERTS_AGameNetworkManager;
 
 // Class Engine.SpotLight
 // 0x0008 (0x0238 - 0x0230)
-class ASpotLight : public ALight
+class ASpotLight : public Alight
 {
 public:
 	class USpotLightComponent*                    SpotLightComponent;                                // 0x0230(0x0008)(Edit, BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, EditConst, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -28953,7 +28953,7 @@ DUMPER7_ASSERTS_APlayerCameraManager;
 
 // Class Engine.PointLight
 // 0x0008 (0x0238 - 0x0230)
-class APointLight final : public ALight
+class APointLight final : public Alight
 {
 public:
 	class UPointLightComponent*                   PointLightComponent;                               // 0x0230(0x0008)(Edit, BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, EditConst, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -29157,7 +29157,7 @@ DUMPER7_ASSERTS_URadialForceComponent;
 
 // Class Engine.RectLight
 // 0x0008 (0x0238 - 0x0230)
-class ARectLight final : public ALight
+class ARectLight final : public Alight
 {
 public:
 	class URectLightComponent*                    RectLightComponent;                                // 0x0230(0x0008)(Edit, BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, EditConst, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)

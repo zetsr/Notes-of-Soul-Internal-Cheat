@@ -256,26 +256,6 @@ void ABP_Gs_XiaoNian_C::Multicast_ChangeBackPartile(class UParticleSystem* Parti
 }
 
 
-// Function BP_Gs_XiaoNian.BP_Gs_XiaoNian_C.ReceiveTick
-// (Event, Public, BlueprintEvent)
-// Parameters:
-// float                                   DeltaSeconds                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_Gs_XiaoNian_C::ReceiveTick(float DeltaSeconds)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Gs_XiaoNian_C", "ReceiveTick");
-
-	Params::BP_Gs_XiaoNian_C_ReceiveTick Parms{};
-
-	Parms.DeltaSeconds = DeltaSeconds;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
 // Function BP_Gs_XiaoNian.BP_Gs_XiaoNian_C.Server_ShowMesh
 // (Net, NetReliable, NetServer, BlueprintCallable, BlueprintEvent)
 
@@ -689,6 +669,26 @@ void ABP_Gs_XiaoNian_C::GetNearestHuman(class ABP_PollenFog_C* PollenVine, struc
 }
 
 
+// Function BP_Gs_XiaoNian.BP_Gs_XiaoNian_C.ReceiveTick
+// (Event, Public, BlueprintEvent)
+// Parameters:
+// float                                   DeltaSeconds                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_Gs_XiaoNian_C::ReceiveTick(float DeltaSeconds)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_Gs_XiaoNian_C", "ReceiveTick");
+
+	Params::BP_Gs_XiaoNian_C_ReceiveTick Parms{};
+
+	Parms.DeltaSeconds = DeltaSeconds;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
 // Function BP_Gs_XiaoNian.BP_Gs_XiaoNian_C.Input_Skill3Pressed
 // (BlueprintCallable, BlueprintEvent)
 
@@ -759,20 +759,6 @@ void ABP_Gs_XiaoNian_C::CancelAble()
 }
 
 
-// Function BP_Gs_XiaoNian.BP_Gs_XiaoNian_C.Input_InteractPressed
-// (BlueprintCallable, BlueprintEvent)
-
-void ABP_Gs_XiaoNian_C::Input_InteractPressed()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Gs_XiaoNian_C", "Input_InteractPressed");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function BP_Gs_XiaoNian.BP_Gs_XiaoNian_C.CancelDoingSomething
 // (BlueprintCallable, BlueprintEvent)
 
@@ -824,6 +810,20 @@ void ABP_Gs_XiaoNian_C::AttackedOnePlayer(class ABP_PlayerHuman_C* Player, float
 	Parms.ForcePlayWhich = ForcePlayWhich;
 
 	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_Gs_XiaoNian.BP_Gs_XiaoNian_C.Input_InteractPressed
+// (BlueprintCallable, BlueprintEvent)
+
+void ABP_Gs_XiaoNian_C::Input_InteractPressed()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_Gs_XiaoNian_C", "Input_InteractPressed");
+
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 

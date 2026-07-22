@@ -44,11 +44,11 @@ public:
 public:
 	void ExecuteUbergraph_BP_Elevator_frame(int32 EntryPoint);
 	void ChangeCurrentFloor(class UMaterialInstance* FloorMaterial);
+	void ReceiveBeginPlay();
+	void OpenCloseDoor(bool IsPositive);
 	void OpenDoor__UpdateFunc();
 	void OpenDoor__FinishedFunc();
 	void UserConstructionScript();
-	void ReceiveBeginPlay();
-	void OpenCloseDoor(bool IsPositive);
 
 public:
 	static class UClass* StaticClass()

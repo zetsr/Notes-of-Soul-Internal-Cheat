@@ -79,9 +79,9 @@ void ABP_ZhiRen_AI_C::server_SstSoundTime(int32 Lv)
 // Function BP_ZhiRen_AI.BP_ZhiRen_AI_C.Multicast_PlaySound
 // (Net, NetReliable, NetMulticast, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    IsPlay                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                                    isPlay                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
-void ABP_ZhiRen_AI_C::Multicast_PlaySound(bool IsPlay)
+void ABP_ZhiRen_AI_C::Multicast_PlaySound(bool isPlay)
 {
 	static class UFunction* Func = nullptr;
 
@@ -90,7 +90,7 @@ void ABP_ZhiRen_AI_C::Multicast_PlaySound(bool IsPlay)
 
 	Params::BP_ZhiRen_AI_C_Multicast_PlaySound Parms{};
 
-	Parms.IsPlay = IsPlay;
+	Parms.isPlay = isPlay;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

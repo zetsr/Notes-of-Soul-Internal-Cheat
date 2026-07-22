@@ -83,7 +83,6 @@ public:
 	void Multicast_ChangeBianZiMaterial(bool IsAttack, float Delay);
 	void CheckHumanWhenCrazy();
 	void Multicast_ChangeBackPartile(class UParticleSystem* Particle);
-	void ReceiveTick(float DeltaSeconds);
 	void Server_ShowMesh();
 	void BndEvt__BPC_PlayerInteract_K2Node_ComponentBoundEvent_0_OnProgressCompleted__DelegateSignature(const class FString& Name_0);
 	void Multicast_SetCompVisible(bool IsDecalVisible);
@@ -108,15 +107,16 @@ public:
 	void IsInOtherPollen(class ABP_PollenFog_C* CurrentPollen, bool* IsIn);
 	void GetNearestPollenVine(class ABP_PollenFog_C** NearestPollenVine_);
 	void GetNearestHuman(class ABP_PollenFog_C* PollenVine, struct FRotator* NearestHuman);
+	void ReceiveTick(float DeltaSeconds);
 	void Input_Skill3Pressed();
 	void Input_Skill2Pressed();
 	void Input_Skill1Pressed();
 	void Input_AttackPressed();
 	void CancelAble();
-	void Input_InteractPressed();
 	void CancelDoingSomething();
 	void Input_TrapPressed();
 	void AttackedOnePlayer(class ABP_PlayerHuman_C* Player, float RealDamage, const class FString& DamageName, int32 ForcePlayWhich);
+	void Input_InteractPressed();
 	void Local_StartGame();
 	void ReceiveBeginPlay();
 	void CanCancelDoing(class ABP_PlayerHuman_C* Human, bool* Can);

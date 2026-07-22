@@ -11,10 +11,10 @@
 #include "Basic.hpp"
 
 #include "Engine_structs.hpp"
-#include "BP_PlayerBase_classes.hpp"
 #include "SCUE4_structs.hpp"
 #include "CoreUObject_structs.hpp"
 #include "E_CharacterType_structs.hpp"
+#include "BP_PlayerBase_classes.hpp"
 
 
 SDK_NAMESPACE_START

@@ -10,9 +10,9 @@
 
 #include "Basic.hpp"
 
+#include "UMG_structs.hpp"
 #include "E_CharacterType_structs.hpp"
 #include "S_ChangeCharacter_structs.hpp"
-#include "UMG_structs.hpp"
 
 
 SDK_NAMESPACE_START

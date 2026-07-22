@@ -573,15 +573,6 @@ public:
 };
 DUMPER7_ASSERTS_BP_Gs_NianShou_C_BndEvt__BPC_PlayerInteract_K2Node_ComponentBoundEvent_1_OnProgressCompleted__DelegateSignature;
 
-// Function BP_Gs_NianShou.BP_Gs_NianShou_C.ReceiveTick
-// 0x0004 (0x0004 - 0x0000)
-struct BP_Gs_NianShou_C_ReceiveTick final
-{
-public:
-	float                                         DeltaSeconds;                                      // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_Gs_NianShou_C_ReceiveTick;
-
 // Function BP_Gs_NianShou.BP_Gs_NianShou_C.Skill2CheckHuman
 // 0x00E0 (0x00E0 - 0x0000)
 struct BP_Gs_NianShou_C_Skill2CheckHuman final
@@ -745,6 +736,15 @@ public:
 	bool                                          CallFunc_K2_SetActorLocationAndRotation_ReturnValue_1; // 0x03E8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
 DUMPER7_ASSERTS_BP_Gs_NianShou_C_ReBuildPositon;
+
+// Function BP_Gs_NianShou.BP_Gs_NianShou_C.ReceiveTick
+// 0x0004 (0x0004 - 0x0000)
+struct BP_Gs_NianShou_C_ReceiveTick final
+{
+public:
+	float                                         DeltaSeconds;                                      // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_Gs_NianShou_C_ReceiveTick;
 
 // Function BP_Gs_NianShou.BP_Gs_NianShou_C.TriggerTrap
 // 0x0004 (0x0004 - 0x0000)

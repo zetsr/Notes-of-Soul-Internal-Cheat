@@ -11,8 +11,8 @@
 #include "Basic.hpp"
 
 #include "SlateCore_structs.hpp"
-#include "S_PlayerEXPData_structs.hpp"
 #include "E_CharacterCampType_structs.hpp"
+#include "S_PlayerEXPData_structs.hpp"
 
 
 SDK_NAMESPACE_START

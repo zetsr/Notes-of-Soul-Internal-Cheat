@@ -10,9 +10,9 @@
 
 #include "Basic.hpp"
 
-#include "W_XCheckItemBase_classes.hpp"
 #include "Engine_structs.hpp"
 #include "SlateCore_structs.hpp"
+#include "W_XCheckItemBase_classes.hpp"
 
 
 SDK_NAMESPACE_START

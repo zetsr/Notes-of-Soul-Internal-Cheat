@@ -12,10 +12,10 @@
 
 #include "UWorks_structs.hpp"
 #include "E_CharacterCampType_structs.hpp"
+#include "S_CharacterAnimationInfo_structs.hpp"
 #include "Engine_structs.hpp"
 #include "SCUE4_structs.hpp"
 #include "S_GameOverResult_structs.hpp"
-#include "S_CharacterAnimationInfo_structs.hpp"
 
 
 SDK_NAMESPACE_START

@@ -10,9 +10,9 @@
 
 #include "Basic.hpp"
 
-#include "E_CharacterCampType_structs.hpp"
 #include "S_MissionReward_structs.hpp"
 #include "E_QuestType_structs.hpp"
+#include "E_CharacterCampType_structs.hpp"
 #include "SCUE4_structs.hpp"
 #include "CoreUObject_structs.hpp"
 

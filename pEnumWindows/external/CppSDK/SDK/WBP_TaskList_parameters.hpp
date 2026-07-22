@@ -10,9 +10,9 @@
 
 #include "Basic.hpp"
 
-#include "KxFramework_structs.hpp"
-#include "E_CharacterCampType_structs.hpp"
 #include "S_Task_structs.hpp"
+#include "E_CharacterCampType_structs.hpp"
+#include "KxFramework_structs.hpp"
 #include "S_GameOverResult_structs.hpp"
 
 

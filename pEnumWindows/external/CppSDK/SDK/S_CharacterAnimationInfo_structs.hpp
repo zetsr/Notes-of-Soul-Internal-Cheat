@@ -10,9 +10,9 @@
 
 #include "Basic.hpp"
 
-#include "E_CharacterType_structs.hpp"
-#include "E_CharacterAnimationType_structs.hpp"
 #include "SCUE4_structs.hpp"
+#include "E_CharacterAnimationType_structs.hpp"
+#include "E_CharacterType_structs.hpp"
 
 
 SDK_NAMESPACE_START

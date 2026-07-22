@@ -32,8 +32,8 @@ public:
 	void InitialConfigure();
 	void Input_MainStarReleased();
 	void Input_MainStarPressed();
-	void InitialConfigureValue();
 	void Virtual_StartSpeedUp(float Delay);
+	void InitialConfigureValue();
 	void ReceiveTick(float DeltaSeconds);
 	void ReceiveBeginPlay();
 	void UserConstructionScript();

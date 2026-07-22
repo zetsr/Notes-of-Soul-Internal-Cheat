@@ -10,13 +10,13 @@
 
 #include "Basic.hpp"
 
-#include "S_TitleData_structs.hpp"
-#include "Engine_structs.hpp"
 #include "E_CommodityType_structs.hpp"
 #include "S_Constryction_structs.hpp"
 #include "SlateCore_structs.hpp"
-#include "S_HumanSkinsInfo_structs.hpp"
 #include "S_AccessoriesInfo_structs.hpp"
+#include "Engine_structs.hpp"
+#include "S_TitleData_structs.hpp"
+#include "S_HumanSkinsInfo_structs.hpp"
 
 
 SDK_NAMESPACE_START

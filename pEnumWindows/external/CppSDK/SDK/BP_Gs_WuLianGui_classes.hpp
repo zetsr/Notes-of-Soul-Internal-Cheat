@@ -82,8 +82,7 @@ public:
 	void ExecuteUbergraph_BP_Gs_WuLianGui(int32 EntryPoint);
 	void EndSKill();
 	void interputSkill3();
-	void ReceiveTick(float DeltaSeconds);
-	void Multicast_PlayKaiCheSound(bool IsPlay, class USoundCue* Sound);
+	void Multicast_PlayKaiCheSound(bool isPlay, class USoundCue* Sound);
 	void Server_Cancle_Footprint(bool Is_Normal);
 	void Server_Footprint(float Span, bool Is_Normal_Footprint);
 	void Multi_Destroy_MaSake();
@@ -128,6 +127,7 @@ public:
 	void Reduce_Skiils_CD();
 	void 毗连增加暴走技能时间();
 	void localUpdateEvent();
+	void ReceiveTick(float DeltaSeconds);
 	void Input_Skill3Pressed();
 	void Input_Skill2Pressed();
 	void Input_Skill1Pressed();

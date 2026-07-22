@@ -11,11 +11,11 @@
 #include "Basic.hpp"
 
 #include "BP_PlayerGhost_classes.hpp"
-#include "Engine_structs.hpp"
-#include "E_CharacterType_structs.hpp"
 #include "S_SheNvDaXiaoShe_structs.hpp"
+#include "Engine_structs.hpp"
 #include "CoreUObject_structs.hpp"
 #include "E_SheNvState_structs.hpp"
+#include "E_CharacterType_structs.hpp"
 
 
 SDK_NAMESPACE_START
@@ -155,7 +155,6 @@ public:
 	void Server_SetMeshHidden(const class USkeletalMeshComponent*& Mesh_0, bool IsHidden_0);
 	void Client_ShowXiaoShe();
 	void Server_ChangeToXiaoShe();
-	void ReceiveTick(float DeltaSeconds);
 	void 时间轴_0__UpdateFunc();
 	void 时间轴_0__FinishedFunc();
 	void Timeline_2__UpdateFunc();
@@ -176,6 +175,7 @@ public:
 	void GetDaXiaoSheData(class FName ClothName, struct FS_SheNvDaXiaoShe* DaXiaoSheData);
 	void UpdateHalfSecondOnServer();
 	void CheckHumanCanBeHitBySkill2();
+	void ReceiveTick(float DeltaSeconds);
 	void Input_Skill1Released();
 	void Input_Skill3Pressed();
 	void Input_Skill2Pressed();
@@ -183,15 +183,15 @@ public:
 	void UpdateInteractTraceTimer();
 	void Input_ChangeMoveRightAxis(float Axis);
 	void Input_ChangeMoveForwardAxis(float Axis);
-	void Input_AttackPressed();
 	void Input_LookRight(float Axis);
+	void Input_AttackPressed();
 	void Input_ResetPositionReleased();
 	void Virtual_KillSomeOne(class ABP_PlayerHuman_C* Human);
 	void Input_ResetPositionPressed();
 	void Input_TrapReleased();
-	void Local_StartGame();
 	void Input_TrapPressed();
 	void ReceiveBeginPlay();
+	void Local_StartGame();
 
 public:
 	static class UClass* StaticClass()

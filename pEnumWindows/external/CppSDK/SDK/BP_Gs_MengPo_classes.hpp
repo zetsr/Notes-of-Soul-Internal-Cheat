@@ -89,7 +89,6 @@ public:
 	void YouLingAttackedPlayer(class ABP_PlayerHuman_C* Human, class ABP_MengPo_Cacodemon_C* YouLing);
 	void Multicast_ChangeControl(bool IsControl, class ABP_MengPo_Cacodemon_C* YouLing);
 	void Server_ChangeControl(bool IsControl, class ABP_MengPo_Cacodemon_C* YouLing, float Delay);
-	void ReceiveTick(float DeltaSeconds);
 	void Input_FlashLightPressed();
 	void Server_StartGame();
 	void InitialConfigure();
@@ -99,6 +98,7 @@ public:
 	void CreateTrapAbout(const struct FVector& Location, class ABP_PlayerGhost_C* Ghost, float AliveTime);
 	void CreateTrapAboutForHuman(float AliveTime);
 	void LocalUpdateHalfSecond();
+	void ReceiveTick(float DeltaSeconds);
 	void Input_Skill3Pressed();
 	void Input_Skill2Pressed();
 	void Input_Skill1Pressed();
@@ -108,8 +108,8 @@ public:
 	void Virtual_CheckHumanDoSomething(const TArray<class ABP_PlayerHuman_C*>& Human);
 	void SetBeStationary(bool IsBeStationary_0, int32 Level);
 	void AttackedOnePlayer(class ABP_PlayerHuman_C* Player, float RealDamage, const class FString& DamageName, int32 ForcePlayWhich);
-	void Input_InteractPressed();
 	void Input_TrapPressed();
+	void Input_InteractPressed();
 	void Local_StartGame();
 	void ReceiveBeginPlay();
 

@@ -28470,104 +28470,104 @@ public:
 };
 DUMPER7_ASSERTS_DecalComponent_GetFadeStartDelay;
 
-// Function Engine.Light.SetAffectTranslucentLighting
+// Function Engine.light.SetAffectTranslucentLighting
 // 0x0001 (0x0001 - 0x0000)
-struct Light_SetAffectTranslucentLighting final
+struct light_SetAffectTranslucentLighting final
 {
 public:
 	bool                                          bNewValue;                                         // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-DUMPER7_ASSERTS_Light_SetAffectTranslucentLighting;
+DUMPER7_ASSERTS_light_SetAffectTranslucentLighting;
 
-// Function Engine.Light.SetBrightness
+// Function Engine.light.SetBrightness
 // 0x0004 (0x0004 - 0x0000)
-struct Light_SetBrightness final
+struct light_SetBrightness final
 {
 public:
 	float                                         NewBrightness;                                     // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-DUMPER7_ASSERTS_Light_SetBrightness;
+DUMPER7_ASSERTS_light_SetBrightness;
 
-// Function Engine.Light.SetCastShadows
+// Function Engine.light.SetCastShadows
 // 0x0001 (0x0001 - 0x0000)
-struct Light_SetCastShadows final
+struct light_SetCastShadows final
 {
 public:
 	bool                                          bNewValue;                                         // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-DUMPER7_ASSERTS_Light_SetCastShadows;
+DUMPER7_ASSERTS_light_SetCastShadows;
 
-// Function Engine.Light.SetEnabled
+// Function Engine.light.SetEnabled
 // 0x0001 (0x0001 - 0x0000)
-struct Light_SetEnabled final
+struct light_SetEnabled final
 {
 public:
 	bool                                          bSetEnabled;                                       // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-DUMPER7_ASSERTS_Light_SetEnabled;
+DUMPER7_ASSERTS_light_SetEnabled;
 
-// Function Engine.Light.SetLightColor
+// Function Engine.light.SetLightColor
 // 0x0010 (0x0010 - 0x0000)
-struct Light_SetLightColor final
+struct light_SetLightColor final
 {
 public:
 	struct FLinearColor                           NewLightColor;                                     // 0x0000(0x0010)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-DUMPER7_ASSERTS_Light_SetLightColor;
+DUMPER7_ASSERTS_light_SetLightColor;
 
-// Function Engine.Light.SetLightFunctionFadeDistance
+// Function Engine.light.SetLightFunctionFadeDistance
 // 0x0004 (0x0004 - 0x0000)
-struct Light_SetLightFunctionFadeDistance final
+struct light_SetLightFunctionFadeDistance final
 {
 public:
 	float                                         NewLightFunctionFadeDistance;                      // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-DUMPER7_ASSERTS_Light_SetLightFunctionFadeDistance;
+DUMPER7_ASSERTS_light_SetLightFunctionFadeDistance;
 
-// Function Engine.Light.SetLightFunctionMaterial
+// Function Engine.light.SetLightFunctionMaterial
 // 0x0008 (0x0008 - 0x0000)
-struct Light_SetLightFunctionMaterial final
+struct light_SetLightFunctionMaterial final
 {
 public:
 	class UMaterialInterface*                     NewLightFunctionMaterial;                          // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-DUMPER7_ASSERTS_Light_SetLightFunctionMaterial;
+DUMPER7_ASSERTS_light_SetLightFunctionMaterial;
 
-// Function Engine.Light.SetLightFunctionScale
+// Function Engine.light.SetLightFunctionScale
 // 0x000C (0x000C - 0x0000)
-struct Light_SetLightFunctionScale final
+struct light_SetLightFunctionScale final
 {
 public:
 	struct FVector                                NewLightFunctionScale;                             // 0x0000(0x000C)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-DUMPER7_ASSERTS_Light_SetLightFunctionScale;
+DUMPER7_ASSERTS_light_SetLightFunctionScale;
 
-// Function Engine.Light.GetBrightness
+// Function Engine.light.GetBrightness
 // 0x0004 (0x0004 - 0x0000)
-struct Light_GetBrightness final
+struct light_GetBrightness final
 {
 public:
 	float                                         ReturnValue;                                       // 0x0000(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-DUMPER7_ASSERTS_Light_GetBrightness;
+DUMPER7_ASSERTS_light_GetBrightness;
 
-// Function Engine.Light.GetLightColor
+// Function Engine.light.GetLightColor
 // 0x0010 (0x0010 - 0x0000)
-struct Light_GetLightColor final
+struct light_GetLightColor final
 {
 public:
 	struct FLinearColor                           ReturnValue;                                       // 0x0000(0x0010)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-DUMPER7_ASSERTS_Light_GetLightColor;
+DUMPER7_ASSERTS_light_GetLightColor;
 
-// Function Engine.Light.IsEnabled
+// Function Engine.light.IsEnabled
 // 0x0001 (0x0001 - 0x0000)
-struct Light_IsEnabled final
+struct light_IsEnabled final
 {
 public:
 	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-DUMPER7_ASSERTS_Light_IsEnabled;
+DUMPER7_ASSERTS_light_IsEnabled;
 
 // Function Engine.DirectionalLightComponent.SetAtmosphereSunLight
 // 0x0001 (0x0001 - 0x0000)

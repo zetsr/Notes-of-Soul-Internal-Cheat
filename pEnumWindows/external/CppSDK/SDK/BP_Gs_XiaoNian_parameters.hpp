@@ -378,15 +378,6 @@ public:
 };
 DUMPER7_ASSERTS_BP_Gs_XiaoNian_C_Multicast_ChangeBackPartile;
 
-// Function BP_Gs_XiaoNian.BP_Gs_XiaoNian_C.ReceiveTick
-// 0x0004 (0x0004 - 0x0000)
-struct BP_Gs_XiaoNian_C_ReceiveTick final
-{
-public:
-	float                                         DeltaSeconds;                                      // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_Gs_XiaoNian_C_ReceiveTick;
-
 // Function BP_Gs_XiaoNian.BP_Gs_XiaoNian_C.BndEvt__BPC_PlayerInteract_K2Node_ComponentBoundEvent_0_OnProgressCompleted__DelegateSignature
 // 0x0010 (0x0010 - 0x0000)
 struct BP_Gs_XiaoNian_C_BndEvt__BPC_PlayerInteract_K2Node_ComponentBoundEvent_0_OnProgressCompleted__DelegateSignature final
@@ -722,6 +713,15 @@ public:
 	class ABP_PlayerHuman_C*                      K2Node_Select_Default;                             // 0x0130(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_BP_Gs_XiaoNian_C_GetNearestHuman;
+
+// Function BP_Gs_XiaoNian.BP_Gs_XiaoNian_C.ReceiveTick
+// 0x0004 (0x0004 - 0x0000)
+struct BP_Gs_XiaoNian_C_ReceiveTick final
+{
+public:
+	float                                         DeltaSeconds;                                      // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_Gs_XiaoNian_C_ReceiveTick;
 
 // Function BP_Gs_XiaoNian.BP_Gs_XiaoNian_C.AttackedOnePlayer
 // 0x0028 (0x0028 - 0x0000)

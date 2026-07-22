@@ -385,15 +385,6 @@ public:
 };
 DUMPER7_ASSERTS_BP_Gs_XianJingGui_C_ChangeRedDoor;
 
-// Function BP_Gs_XianJingGui.BP_Gs_XianJingGui_C.ReceiveTick
-// 0x0004 (0x0004 - 0x0000)
-struct BP_Gs_XianJingGui_C_ReceiveTick final
-{
-public:
-	float                                         DeltaSeconds;                                      // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_Gs_XianJingGui_C_ReceiveTick;
-
 // Function BP_Gs_XianJingGui.BP_Gs_XianJingGui_C.SomeOneTriggeredFakeBox
 // 0x0010 (0x0010 - 0x0000)
 struct BP_Gs_XianJingGui_C_SomeOneTriggeredFakeBox final
@@ -703,6 +694,15 @@ public:
 	int32                                         CallFunc_SelectInt_ReturnValue;                    // 0x0030(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_BP_Gs_XianJingGui_C_ShowAllElementBox;
+
+// Function BP_Gs_XianJingGui.BP_Gs_XianJingGui_C.ReceiveTick
+// 0x0004 (0x0004 - 0x0000)
+struct BP_Gs_XianJingGui_C_ReceiveTick final
+{
+public:
+	float                                         DeltaSeconds;                                      // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_Gs_XianJingGui_C_ReceiveTick;
 
 // Function BP_Gs_XianJingGui.BP_Gs_XianJingGui_C.Input_ChangeMoveRightAxis
 // 0x0004 (0x0004 - 0x0000)

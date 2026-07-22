@@ -11,11 +11,11 @@
 #include "Basic.hpp"
 
 #include "E_CloudDataType_structs.hpp"
-#include "S_SkillLevelUpCost_structs.hpp"
 #include "S_SkillLevelData_structs.hpp"
 #include "E_CharacterType_structs.hpp"
-#include "SlateCore_structs.hpp"
 #include "SCUE4_structs.hpp"
+#include "SlateCore_structs.hpp"
+#include "S_SkillLevelUpCost_structs.hpp"
 
 
 SDK_NAMESPACE_START

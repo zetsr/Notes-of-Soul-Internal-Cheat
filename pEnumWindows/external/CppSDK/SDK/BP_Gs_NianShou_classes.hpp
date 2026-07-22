@@ -81,7 +81,6 @@ public:
 	void RefreshHumanLoc();
 	void BndEvt__BPC_PlayerInteract_K2Node_ComponentBoundEvent_1_OnProgressCompleted__DelegateSignature(const class FString& Name_0);
 	void Client_SetNianShouFreeze();
-	void ReceiveTick(float DeltaSeconds);
 	void ReleaseSkill3();
 	void Input_FlashLightPressed();
 	void InitialConfigure();
@@ -93,18 +92,19 @@ public:
 	void CheckUpOrDownGround(const struct FVector& ImpactPoint, struct FVector* RightLocation);
 	void ChangeHiddenMeshAndDecal(class FName ClothName);
 	void ReBuildPositon(const struct FVector& LastLocation, struct FVector* ExportationLocation);
+	void ReceiveTick(float DeltaSeconds);
 	void Input_Skill1Pressed();
 	void Input_Skill2Released();
 	void Input_Skill3Pressed();
 	void Input_Skill2Pressed();
 	void Input_AttackPressed();
 	void TriggerTrap(float Delay);
-	void SetBeStationary(bool IsBeStationary_0, int32 Level);
 	void Input_ResetPositionPressed();
-	void Local_StartGame();
+	void SetBeStationary(bool IsBeStationary_0, int32 Level);
 	void CancelDoingSomething();
 	void Input_TrapReleased();
 	void Input_TrapPressed();
+	void Local_StartGame();
 	void ReceiveBeginPlay();
 
 public:

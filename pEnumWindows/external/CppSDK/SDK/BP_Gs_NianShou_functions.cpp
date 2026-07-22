@@ -380,26 +380,6 @@ void ABP_Gs_NianShou_C::Client_SetNianShouFreeze()
 }
 
 
-// Function BP_Gs_NianShou.BP_Gs_NianShou_C.ReceiveTick
-// (Event, Public, BlueprintEvent)
-// Parameters:
-// float                                   DeltaSeconds                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_Gs_NianShou_C::ReceiveTick(float DeltaSeconds)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Gs_NianShou_C", "ReceiveTick");
-
-	Params::BP_Gs_NianShou_C_ReceiveTick Parms{};
-
-	Parms.DeltaSeconds = DeltaSeconds;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
 // Function BP_Gs_NianShou.BP_Gs_NianShou_C.ReleaseSkill3
 // (BlueprintCallable, BlueprintEvent)
 
@@ -591,6 +571,26 @@ void ABP_Gs_NianShou_C::ReBuildPositon(const struct FVector& LastLocation, struc
 }
 
 
+// Function BP_Gs_NianShou.BP_Gs_NianShou_C.ReceiveTick
+// (Event, Public, BlueprintEvent)
+// Parameters:
+// float                                   DeltaSeconds                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_Gs_NianShou_C::ReceiveTick(float DeltaSeconds)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_Gs_NianShou_C", "ReceiveTick");
+
+	Params::BP_Gs_NianShou_C_ReceiveTick Parms{};
+
+	Parms.DeltaSeconds = DeltaSeconds;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
 // Function BP_Gs_NianShou.BP_Gs_NianShou_C.Input_Skill1Pressed
 // (BlueprintCallable, BlueprintEvent)
 
@@ -681,6 +681,20 @@ void ABP_Gs_NianShou_C::TriggerTrap(float Delay)
 }
 
 
+// Function BP_Gs_NianShou.BP_Gs_NianShou_C.Input_ResetPositionPressed
+// (BlueprintCallable, BlueprintEvent)
+
+void ABP_Gs_NianShou_C::Input_ResetPositionPressed()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_Gs_NianShou_C", "Input_ResetPositionPressed");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // Function BP_Gs_NianShou.BP_Gs_NianShou_C.SetBeStationary
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -700,34 +714,6 @@ void ABP_Gs_NianShou_C::SetBeStationary(bool IsBeStationary_0, int32 Level)
 	Parms.Level = Level;
 
 	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_Gs_NianShou.BP_Gs_NianShou_C.Input_ResetPositionPressed
-// (BlueprintCallable, BlueprintEvent)
-
-void ABP_Gs_NianShou_C::Input_ResetPositionPressed()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Gs_NianShou_C", "Input_ResetPositionPressed");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_Gs_NianShou.BP_Gs_NianShou_C.Local_StartGame
-// (BlueprintCallable, BlueprintEvent)
-
-void ABP_Gs_NianShou_C::Local_StartGame()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Gs_NianShou_C", "Local_StartGame");
-
-	UObject::ProcessEvent(Func, nullptr);
 }
 
 
@@ -768,6 +754,20 @@ void ABP_Gs_NianShou_C::Input_TrapPressed()
 
 	if (Func == nullptr)
 		Func = Class->GetFunction("BP_Gs_NianShou_C", "Input_TrapPressed");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_Gs_NianShou.BP_Gs_NianShou_C.Local_StartGame
+// (BlueprintCallable, BlueprintEvent)
+
+void ABP_Gs_NianShou_C::Local_StartGame()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_Gs_NianShou_C", "Local_StartGame");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

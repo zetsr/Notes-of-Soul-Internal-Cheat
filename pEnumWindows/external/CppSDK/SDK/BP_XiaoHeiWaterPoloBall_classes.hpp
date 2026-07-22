@@ -36,9 +36,9 @@ public:
 	void ExecuteUbergraph_BP_XiaoHeiWaterPoloBall(int32 EntryPoint);
 	void BndEvt__Sphere_K2Node_ComponentBoundEvent_2_ComponentHitSignature__DelegateSignature(class UPrimitiveComponent* HitComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, const struct FVector& NormalImpulse, const struct FHitResult& Hit);
 	void BndEvt__Box_K2Node_ComponentBoundEvent_0_ComponentHitSignature__DelegateSignature(class UPrimitiveComponent* HitComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, const struct FVector& NormalImpulse, const struct FHitResult& Hit);
-	void Server_ShowParticle(const struct FVector& Loc, const struct FRotator& Rota, class UParticleSystem* Particle);
+	void Server_ShowParticle(const struct FVector& Loc, const struct FRotator& rota, class UParticleSystem* Particle);
 	void Server_SpawnHitParticle(const struct FVector& Loc);
-	void Multicast_ShowParticle(const struct FVector& Loc, const struct FRotator& Rota, class UParticleSystem* Particle);
+	void Multicast_ShowParticle(const struct FVector& Loc, const struct FRotator& rota, class UParticleSystem* Particle);
 	void Multicast_SpawnHitParticle(const struct FVector& Loc);
 	void ReceiveBeginPlay();
 	void BndEvt__Box_K2Node_ComponentBoundEvent_1_ComponentBeginOverlapSignature__DelegateSignature(class UPrimitiveComponent* OverlappedComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const struct FHitResult& SweepResult);

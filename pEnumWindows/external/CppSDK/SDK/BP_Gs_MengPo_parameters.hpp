@@ -775,15 +775,6 @@ public:
 };
 DUMPER7_ASSERTS_BP_Gs_MengPo_C_Server_ChangeControl;
 
-// Function BP_Gs_MengPo.BP_Gs_MengPo_C.ReceiveTick
-// 0x0004 (0x0004 - 0x0000)
-struct BP_Gs_MengPo_C_ReceiveTick final
-{
-public:
-	float                                         DeltaSeconds;                                      // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_Gs_MengPo_C_ReceiveTick;
-
 // Function BP_Gs_MengPo.BP_Gs_MengPo_C.UserConstructionScript
 // 0x0001 (0x0001 - 0x0000)
 struct BP_Gs_MengPo_C_UserConstructionScript final
@@ -879,6 +870,15 @@ public:
 	struct FVector                                CallFunc_K2_GetComponentLocation_ReturnValue;      // 0x0044(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_BP_Gs_MengPo_C_CreateTrapAboutForHuman;
+
+// Function BP_Gs_MengPo.BP_Gs_MengPo_C.ReceiveTick
+// 0x0004 (0x0004 - 0x0000)
+struct BP_Gs_MengPo_C_ReceiveTick final
+{
+public:
+	float                                         DeltaSeconds;                                      // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_Gs_MengPo_C_ReceiveTick;
 
 // Function BP_Gs_MengPo.BP_Gs_MengPo_C.GetMoveDirection
 // 0x00D4 (0x00D4 - 0x0000)

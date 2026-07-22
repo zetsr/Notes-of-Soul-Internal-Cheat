@@ -72,12 +72,12 @@ public:
 	void Input_CrouchPressed();
 	void Input_AttackReleased();
 	void StartDoingSomething(float Delay, const class FString& Name_0);
+	void Input_AttackPressed();
 	void Server_TreatmentPlayer(class ABP_PlayerHuman_C* OtherPlayer, float Value);
 	void Local_StartGame();
-	void Input_AttackPressed();
-	void OnTakeDamage(float Damage, const class FString& Name_0, float CustomData, class AController* EventInstigator, class AActor* DamageCauser);
 	void ReceiveBeginPlay();
 	void OnHealthLocked(const class FString& Name_0, float CustomData, class APawn* PawnInstigator, class AController* Suffer);
+	void OnTakeDamage(float Damage, const class FString& Name_0, float CustomData, class AController* EventInstigator, class AActor* DamageCauser);
 	void UserConstructionScript();
 	void BeChasedTimeCount();
 

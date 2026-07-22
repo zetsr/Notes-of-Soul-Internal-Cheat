@@ -13,8 +13,8 @@
 #include "UMG_structs.hpp"
 #include "KxFramework_structs.hpp"
 #include "Engine_structs.hpp"
-#include "SlateCore_structs.hpp"
 #include "S_ExchangeStructure_structs.hpp"
+#include "SlateCore_structs.hpp"
 
 
 SDK_NAMESPACE_START

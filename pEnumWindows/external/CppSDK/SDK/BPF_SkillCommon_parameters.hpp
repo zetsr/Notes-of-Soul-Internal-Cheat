@@ -10,14 +10,14 @@
 
 #include "Basic.hpp"
 
-#include "SCUE4_structs.hpp"
-#include "E_CharacterType_structs.hpp"
-#include "S_CharacterSkills_structs.hpp"
 #include "S_SKillsInfo_structs.hpp"
-#include "S_SkillLevelData_structs.hpp"
+#include "SCUE4_structs.hpp"
 #include "S_SkillEffectValue_structs.hpp"
+#include "E_CharacterType_structs.hpp"
 #include "Engine_structs.hpp"
 #include "E_CharacterCampType_structs.hpp"
+#include "S_SkillLevelData_structs.hpp"
+#include "S_CharacterSkills_structs.hpp"
 #include "S_HumanSKillsInfo_structs.hpp"
 #include "S_SkillLevelUpCost_structs.hpp"
 

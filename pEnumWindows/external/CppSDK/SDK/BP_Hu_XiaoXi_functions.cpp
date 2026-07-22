@@ -214,6 +214,20 @@ void ABP_Hu_XiaoXi_C::Local_StartGame()
 }
 
 
+// Function BP_Hu_XiaoXi.BP_Hu_XiaoXi_C.ReceiveBeginPlay
+// (Event, Protected, BlueprintEvent)
+
+void ABP_Hu_XiaoXi_C::ReceiveBeginPlay()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_Hu_XiaoXi_C", "ReceiveBeginPlay");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // Function BP_Hu_XiaoXi.BP_Hu_XiaoXi_C.OnTakeDamage
 // (BlueprintAuthorityOnly, Event, Public, BlueprintEvent)
 // Parameters:
@@ -239,20 +253,6 @@ void ABP_Hu_XiaoXi_C::OnTakeDamage(float Damage, const class FString& Name_0, fl
 	Parms.DamageCauser = DamageCauser;
 
 	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_Hu_XiaoXi.BP_Hu_XiaoXi_C.ReceiveBeginPlay
-// (Event, Protected, BlueprintEvent)
-
-void ABP_Hu_XiaoXi_C::ReceiveBeginPlay()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Hu_XiaoXi_C", "ReceiveBeginPlay");
-
-	UObject::ProcessEvent(Func, nullptr);
 }
 
 

@@ -585,7 +585,7 @@ public:
 	bool                                          CallFunc_BooleanAND_ReturnValue_9;                 // 0x11D4(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_EqualEqual_NameName_ReturnValue_4;        // 0x11D5(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          ___bool_Variable_26;                               // 0x11D6(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          K2Node_CustomEvent_IsPlay;                         // 0x11D7(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          K2Node_CustomEvent_isPlay;                         // 0x11D7(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	class USoundCue*                              K2Node_CustomEvent_Sound;                          // 0x11D8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         K2Node_Select_Default_25;                          // 0x11E0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FRotator                               CallFunc_MakeRotator_ReturnValue_2;                // 0x11E4(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -705,21 +705,12 @@ public:
 };
 DUMPER7_ASSERTS_BP_Gs_WuLianGui_C_ExecuteUbergraph_BP_Gs_WuLianGui;
 
-// Function BP_Gs_WuLianGui.BP_Gs_WuLianGui_C.ReceiveTick
-// 0x0004 (0x0004 - 0x0000)
-struct BP_Gs_WuLianGui_C_ReceiveTick final
-{
-public:
-	float                                         DeltaSeconds;                                      // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_Gs_WuLianGui_C_ReceiveTick;
-
 // Function BP_Gs_WuLianGui.BP_Gs_WuLianGui_C.Multicast_PlayKaiCheSound
 // 0x0010 (0x0010 - 0x0000)
 struct BP_Gs_WuLianGui_C_Multicast_PlayKaiCheSound final
 {
 public:
-	bool                                          IsPlay;                                            // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          isPlay;                                            // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class USoundCue*                              Sound;                                             // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
@@ -1034,6 +1025,15 @@ public:
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
 DUMPER7_ASSERTS_BP_Gs_WuLianGui_C_毗连增加暴走技能时间;
+
+// Function BP_Gs_WuLianGui.BP_Gs_WuLianGui_C.ReceiveTick
+// 0x0004 (0x0004 - 0x0000)
+struct BP_Gs_WuLianGui_C_ReceiveTick final
+{
+public:
+	float                                         DeltaSeconds;                                      // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_Gs_WuLianGui_C_ReceiveTick;
 
 // Function BP_Gs_WuLianGui.BP_Gs_WuLianGui_C.Input_ChangeMoveRightAxis
 // 0x0004 (0x0004 - 0x0000)

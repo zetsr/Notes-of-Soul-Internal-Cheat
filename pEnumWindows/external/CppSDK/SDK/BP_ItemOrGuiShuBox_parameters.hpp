@@ -10,11 +10,11 @@
 
 #include "Basic.hpp"
 
+#include "CoreUObject_structs.hpp"
+#include "SCUE4_structs.hpp"
 #include "Engine_structs.hpp"
 #include "S_ItemDBInfo_structs.hpp"
-#include "CoreUObject_structs.hpp"
 #include "S_ItemInfo_structs.hpp"
-#include "SCUE4_structs.hpp"
 
 
 SDK_NAMESPACE_START

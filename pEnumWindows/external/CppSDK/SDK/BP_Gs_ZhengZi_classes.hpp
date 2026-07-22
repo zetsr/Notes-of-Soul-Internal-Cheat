@@ -75,7 +75,6 @@ public:
 	void UpdatePortal();
 	void StopUpdatePortal();
 	void StartUpdatePortal(class ABP_Portal_C* CurrentPortal);
-	void ReceiveTick(float DeltaSeconds);
 	void 时间轴_0__UpdateFunc();
 	void 时间轴_0__FinishedFunc();
 	void 时间轴_1__UpdateFunc();
@@ -83,6 +82,7 @@ public:
 	void Timeline_0_0__UpdateFunc();
 	void Timeline_0_0__FinishedFunc();
 	void CanPutProtal(bool* Can);
+	void ReceiveTick(float DeltaSeconds);
 	void Input_Skill3Released();
 	void Input_Skill3Pressed();
 	void Input_Skill2Pressed();

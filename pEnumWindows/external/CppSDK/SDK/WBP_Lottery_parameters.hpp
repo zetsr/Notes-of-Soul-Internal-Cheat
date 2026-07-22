@@ -10,13 +10,13 @@
 
 #include "Basic.hpp"
 
-#include "SlateCore_structs.hpp"
 #include "S_BoxChoose_structs.hpp"
-#include "LotteryBoxType_structs.hpp"
 #include "CoreUObject_structs.hpp"
+#include "LotteryBoxType_structs.hpp"
 #include "UWorks_structs.hpp"
 #include "UMG_structs.hpp"
 #include "Engine_structs.hpp"
+#include "SlateCore_structs.hpp"
 #include "E_CharacterType_structs.hpp"
 
 

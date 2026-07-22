@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "SCUE4_structs.hpp"
 #include "E_MoneyType_structs.hpp"
+#include "SCUE4_structs.hpp"
 
 
 SDK_NAMESPACE_START

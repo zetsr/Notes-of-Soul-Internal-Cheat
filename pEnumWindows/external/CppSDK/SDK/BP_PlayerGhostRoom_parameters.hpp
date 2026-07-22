@@ -11,9 +11,9 @@
 #include "Basic.hpp"
 
 #include "InputCore_structs.hpp"
+#include "CoreUObject_structs.hpp"
 #include "Str_CharacterSpecialOwnedSkeletalMesh_Unit_structs.hpp"
 #include "Engine_structs.hpp"
-#include "CoreUObject_structs.hpp"
 
 
 SDK_NAMESPACE_START

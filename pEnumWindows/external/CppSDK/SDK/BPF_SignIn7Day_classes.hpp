@@ -11,12 +11,12 @@
 #include "Basic.hpp"
 
 #include "Engine_classes.hpp"
+#include "E_GameStartAnimation_structs.hpp"
+#include "E_GameOverAnimation_structs.hpp"
 #include "E_HeadType_structs.hpp"
 #include "E_CharacterType_structs.hpp"
-#include "E_GameStartAnimation_structs.hpp"
 #include "E_GiftBagType_structs.hpp"
 #include "E_CloudDataType_structs.hpp"
-#include "E_GameOverAnimation_structs.hpp"
 
 
 SDK_NAMESPACE_START
