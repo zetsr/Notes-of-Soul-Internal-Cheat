@@ -76,7 +76,7 @@ namespace g_Menu {
                 Shadow::EndTabItem();
 
                 if (Shadow::BeginTabItem(_XOR_(U8("视觉##tab2")).str())) {
-                    Shadow::Combo(_XOR_(U8("阵营##target_combo")).str(), &selectedTarget, tempOptions);
+                    Shadow::Combo(_XOR_(U8("阵营##target_combo")).str(), &selectedTarget, tempOptions, Shadow::ShadowComboFlags_NoRightAlign | Shadow::ShadowComboFlags_FitText);
 
                     if (selectedTarget == 0) {
                         Shadow::Switch(_XOR_(U8("开启透视##esp_enemy")).str(), &g_Config::bESP_Enemy);
