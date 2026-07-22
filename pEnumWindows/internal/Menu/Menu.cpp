@@ -60,6 +60,8 @@ namespace g_Menu {
                         Shadow::Slider(_XOR_(U8("魔法攻击Fov##magic_attack__fov")).str(), &g_Config::fMagicAttackFov, 0.1f, 180.0f, 0.1f, Shadow::ShadowSliderFlags_NoRightAlign);
                     }
 
+                    Shadow::Separator();
+
                     Shadow::HotKey(_XOR_(U8("一键传送##teleport__key")).str(), &g_Config::kTeleport, &g_Config::bEnableTeleport, &g_Config::eTeleportMode, Shadow::ShadowHotkeyFlags_NoRightAlign | Shadow::ShadowHotkeyFlags_NoStateDisplay);
                     Shadow::SameLine();
                     Shadow::Combo(_XOR_(U8("传送模式##teleport__mode")).str(), &selectedTeleportMode, teleportModeOptions, Shadow::ShadowComboFlags_NoText | Shadow::ShadowComboFlags_NoRightAlign | Shadow::ShadowComboFlags_FitText);
