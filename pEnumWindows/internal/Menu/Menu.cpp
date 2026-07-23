@@ -44,7 +44,7 @@ namespace g_Menu {
             if (Shadow::BeginTabBar(_XOR_(U8("MainTabs##tabs")).str())) {
 
                 if (Shadow::BeginTabItem(_XOR_(U8("设置##tab0")).str())) {
-                    Shadow::HotKey(_XOR_(U8("菜单开关##menu_key")).str(), &g_Config::kMenu);
+                    Shadow::HotKey(_XOR_(U8("菜单开关##menu_key")).str(), &g_Config::kMenu, Shadow::ShadowHotkeyFlags_NoRightAlign);
                 }
                 Shadow::EndTabItem();
 
