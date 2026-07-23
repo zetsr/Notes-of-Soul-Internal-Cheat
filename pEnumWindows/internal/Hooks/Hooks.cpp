@@ -98,7 +98,10 @@ namespace g_Hooks {
 			if (MH_CreateHook(targetAddr, &hkPostRender, reinterpret_cast<LPVOID*>(&oPostRender)) == MH_OK) {
 				MH_EnableHook(targetAddr);
 			}
-		}
+        }
+        else {
+            MessageBox(NULL, L"PostRender特征码过期", L"错误", MB_OK | MB_ICONERROR);
+        }
 	}
 
     void FindWndProc() {
